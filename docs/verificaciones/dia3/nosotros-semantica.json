@@ -1,0 +1,101 @@
+{
+  "title": "Nosotros | Ruta Andina",
+  "description": "Conoce Ruta Andina y nuestras experiencias de trekking, ciclismo y turismo responsable en Bolivia, con seguridad y respeto por las comunidades y la naturaleza.",
+  "lang": "es",
+  "headings": [
+    {
+      "level": 1,
+      "text": "NOSOTROS"
+    },
+    {
+      "level": 2,
+      "text": "¿QUIÉNES SOMOS?"
+    },
+    {
+      "level": 3,
+      "text": "MISIÓN"
+    },
+    {
+      "level": 3,
+      "text": "VISIÓN"
+    },
+    {
+      "level": 2,
+      "text": "TU SEGURIDAD ES NUESTRA PRIORIDAD"
+    },
+    {
+      "level": 3,
+      "text": "Evaluación de rutas"
+    },
+    {
+      "level": 3,
+      "text": "Preparación adecuada"
+    },
+    {
+      "level": 3,
+      "text": "Comunicación"
+    },
+    {
+      "level": 3,
+      "text": "Protocolos de emergencia"
+    },
+    {
+      "level": 3,
+      "text": "Planificación"
+    },
+    {
+      "level": 2,
+      "text": "AVENTURAS CON RESPETO POR NUESTRAS COMUNIDADES"
+    },
+    {
+      "level": 3,
+      "text": "Coordinación y permisos"
+    },
+    {
+      "level": 3,
+      "text": "Protección del entorno"
+    },
+    {
+      "level": 2,
+      "text": "NUESTRO COMPROMISO"
+    },
+    {
+      "level": 3,
+      "text": "Seguridad y responsabilidad"
+    },
+    {
+      "level": 3,
+      "text": "Turismo responsable"
+    },
+    {
+      "level": 3,
+      "text": "Experiencias auténticas"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/nosotros-01.jpg",
+      "alt": "Montañistas recorriendo senderos en la cordillera de los Andes con vista a lagunas de montaña"
+    },
+    {
+      "src": "/images/nosotros-02.jpg",
+      "alt": "Montañistas contemplando la cordillera andina y lagunas"
+    },
+    {
+      "src": "/images/nosotros-03.jpg",
+      "alt": "Turista interactuando con personas y tradiciones andinas"
+    },
+    {
+      "src": "/images/nosotros-04.jpg",
+      "alt": "Montañista con mochila recorriendo la cumbre de los Andes"
+    },
+    {
+      "src": "/images/nosotros-05.jpg",
+      "alt": "Laguna andina de aguas turquesas rodeada de montañas nevadas"
+    },
+    {
+      "src": "/images/nosotros-06.jpg",
+      "alt": "Ciclista de montaña en ruta con vista a los Andes"
+    }
+  ]
+}

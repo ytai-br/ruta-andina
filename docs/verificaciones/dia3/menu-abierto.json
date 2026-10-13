@@ -1,0 +1,3149 @@
+{
+  "url": "http://127.0.0.1:4175/",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": [
+        {
+          "target": [
+            ".bg-andino-wine\\/90"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"pointer-events-auto px-4 py-1.5 rounded-full bg-andino-wine/90 backdrop-blur-sm border border-red-300/40 text-xs uppercase tracking-widest font-semibold flex items-center gap-2 shadow-lg\">",
+                  "target": [
+                    ".bg-andino-wine\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-black/60\"></div>",
+                  "target": [
+                    ".bg-black\\/60"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-gradient-to-t from-[#F8F3EA] via-transparent to-black/60\"></div>",
+                  "target": [
+                    ".bg-gradient-to-t"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "27.0pt (36px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"absolute inset-0 bg-black/60\"></div>",
+                  "target": [
+                    ".bg-black\\/60"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-gradient-to-t from-[#F8F3EA] via-transparent to-black/60\"></div>",
+                  "target": [
+                    ".bg-gradient-to-t"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "h1 > .text-amber-300"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "27.0pt (36px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"absolute inset-0 bg-black/60\"></div>",
+                  "target": [
+                    ".bg-black\\/60"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-gradient-to-t from-[#F8F3EA] via-transparent to-black/60\"></div>",
+                  "target": [
+                    ".bg-gradient-to-t"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:text-xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.97 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.97 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"absolute inset-0 bg-black/60\"></div>",
+                  "target": [
+                    ".bg-black\\/60"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-gradient-to-t from-[#F8F3EA] via-transparent to-black/60\"></div>",
+                  "target": [
+                    ".bg-gradient-to-t"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.97 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".hover\\:bg-white\\/30"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a class=\"px-8 py-3.5 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md text-white border border-white/40 font-title text-lg tracking-wider uppercase transition shadow-lg\" href=\"/nosotros\" data-discover=\"true\"> Conócenos </a>",
+                  "target": [
+                    ".hover\\:bg-white\\/30"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-black/60\"></div>",
+                  "target": [
+                    ".bg-black\\/60"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-gradient-to-t from-[#F8F3EA] via-transparent to-black/60\"></div>",
+                  "target": [
+                    ".bg-gradient-to-t"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".mt-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#f8f3ea",
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-home font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".hover\\:bg-amber-50\\/60.p-2[href$=\"#route-death-road\"] > .font-medium.text-neutral-800"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-7 bg-[#FFFDF9] border border-[#E4D8C5] rounded-3xl p-5 sm:p-6 shadow-md\">",
+                  "target": [
+                    ".lg\\:col-span-7"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".hover\\:bg-amber-50\\/60.p-2[href$=\"#route-pico-tunari\"] > .font-medium.text-neutral-800"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-7 bg-[#FFFDF9] border border-[#E4D8C5] rounded-3xl p-5 sm:p-6 shadow-md\">",
+                  "target": [
+                    ".lg\\:col-span-7"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".hover\\:bg-amber-50\\/60.p-2[href$=\"#route-el-choro\"] > .font-medium.text-neutral-800"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-7 bg-[#FFFDF9] border border-[#E4D8C5] rounded-3xl p-5 sm:p-6 shadow-md\">",
+                  "target": [
+                    ".lg\\:col-span-7"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".hover\\:bg-amber-50\\/60.p-2[href$=\"#route-isla-del-sol\"] > .font-medium.text-neutral-800"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-7 bg-[#FFFDF9] border border-[#E4D8C5] rounded-3xl p-5 sm:p-6 shadow-md\">",
+                  "target": [
+                    ".lg\\:col-span-7"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".mb-1 > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"w-full md:w-56 shrink-0 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-inner\">",
+                  "target": [
+                    ".md\\:w-56"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".mb-1 > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"w-full md:w-56 shrink-0 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-inner\">",
+                  "target": [
+                    ".md\\:w-56"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".mb-1 > span:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"w-full md:w-56 shrink-0 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-inner\">",
+                  "target": [
+                    ".md\\:w-56"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".mb-1 > span:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"w-full md:w-56 shrink-0 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-inner\">",
+                  "target": [
+                    ".md\\:w-56"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".mb-1 > span:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"w-full md:w-56 shrink-0 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-inner\">",
+                  "target": [
+                    ".md\\:w-56"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".mb-1 > span:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"w-full md:w-56 shrink-0 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-inner\">",
+                  "target": [
+                    ".md\\:w-56"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".mb-1 > span:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"w-full md:w-56 shrink-0 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-inner\">",
+                  "target": [
+                    ".md\\:w-56"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".text-neutral-500.py-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.556 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.556 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"w-full md:w-56 shrink-0 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-inner\">",
+                  "target": [
+                    ".md\\:w-56"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.556 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-death-road > div:nth-child(1) > .mb-4.text-center > .group-hover\\:text-andino-wine.transition-colors"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-death-road\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-death-road"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-death-road > div:nth-child(1) > .mb-4.text-center > .mt-1.gap-1.font-semibold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-death-road\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-death-road"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-death-road > div:nth-child(1) > .leading-relaxed.mb-6.text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-death-road\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-death-road"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-death-road > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(1) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-death-road > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-death-road\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-death-road"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-death-road > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(2) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-death-road > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-death-road\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-death-road"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-death-road > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(3) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-death-road > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-death-road\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-death-road"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-death-road > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(4) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-death-road > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-death-road\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-death-road"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-death-road > .pt-2.justify-between.gap-2 > div > .leading-none.block.text-2xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-death-road\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-death-road"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-death-road > .pt-2.justify-between.gap-2 > div > .text-\\[10px\\].tracking-wider.text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-death-road\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-death-road"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-death-road > .pt-2.justify-between.gap-2 > .px-5.py-2\\.5.hover\\:bg-andino-wineDark > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "nonBmp"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-el-choro > div:nth-child(1) > .mb-4.text-center > .group-hover\\:text-andino-wine.transition-colors"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-el-choro\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-el-choro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-el-choro > div:nth-child(1) > .mb-4.text-center > .mt-1.gap-1.font-semibold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-el-choro\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-el-choro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-el-choro > div:nth-child(1) > .leading-relaxed.mb-6.text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-el-choro\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-el-choro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-el-choro > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(1) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-el-choro > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-el-choro\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-el-choro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-el-choro > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(2) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-el-choro > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-el-choro\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-el-choro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-el-choro > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(3) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-el-choro > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-el-choro\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-el-choro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-el-choro > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(4) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-el-choro > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-el-choro\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-el-choro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-el-choro > .pt-2.justify-between.gap-2 > div > .leading-none.block.text-2xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-el-choro\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-el-choro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-el-choro > .pt-2.justify-between.gap-2 > div > .text-\\[10px\\].tracking-wider.text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-el-choro\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-el-choro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "a[aria-label=\"Reservar El Camino del Choro\"] > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "nonBmp"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-isla-del-sol > div:nth-child(1) > .mb-4.text-center > .group-hover\\:text-andino-wine.transition-colors"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-isla-del-sol\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-isla-del-sol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-isla-del-sol > div:nth-child(1) > .mb-4.text-center > .mt-1.gap-1.font-semibold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-isla-del-sol\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-isla-del-sol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-isla-del-sol > div:nth-child(1) > .leading-relaxed.mb-6.text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-isla-del-sol\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-isla-del-sol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-isla-del-sol > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(1) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-isla-del-sol > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-isla-del-sol\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-isla-del-sol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-isla-del-sol > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(2) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-isla-del-sol > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-isla-del-sol\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-isla-del-sol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-isla-del-sol > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(3) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-isla-del-sol > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-isla-del-sol\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-isla-del-sol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-isla-del-sol > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(4) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-isla-del-sol > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-isla-del-sol\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-isla-del-sol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-isla-del-sol > .pt-2.justify-between.gap-2 > div > .leading-none.block.text-2xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-isla-del-sol\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-isla-del-sol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-isla-del-sol > .pt-2.justify-between.gap-2 > div > .text-\\[10px\\].tracking-wider.text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-isla-del-sol\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-isla-del-sol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "a[aria-label=\"Reservar Isla del Sol\"] > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "nonBmp"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-pico-tunari > div:nth-child(1) > .mb-4.text-center > .group-hover\\:text-andino-wine.transition-colors"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-pico-tunari\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-pico-tunari"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-pico-tunari > div:nth-child(1) > .mb-4.text-center > .mt-1.gap-1.font-semibold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-pico-tunari\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-pico-tunari"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-pico-tunari > div:nth-child(1) > .leading-relaxed.mb-6.text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-pico-tunari\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-pico-tunari"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-pico-tunari > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(1) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-pico-tunari > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-pico-tunari\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-pico-tunari"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-pico-tunari > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(2) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-pico-tunari > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-pico-tunari\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-pico-tunari"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-pico-tunari > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(3) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-pico-tunari > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-pico-tunari\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-pico-tunari"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-pico-tunari > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(4) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-pico-tunari > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-pico-tunari\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-pico-tunari"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-pico-tunari > .pt-2.justify-between.gap-2 > div > .leading-none.block.text-2xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-pico-tunari\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-pico-tunari"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-pico-tunari > .pt-2.justify-between.gap-2 > div > .text-\\[10px\\].tracking-wider.text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-pico-tunari\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-pico-tunari"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "a[aria-label=\"Reservar Pico Tunari\"] > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "nonBmp"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-vacas > div:nth-child(1) > .mb-4.text-center > .group-hover\\:text-andino-wine.transition-colors"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-vacas\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-vacas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-vacas > div:nth-child(1) > .mb-4.text-center > .mt-1.gap-1.font-semibold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-vacas\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-vacas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-vacas > div:nth-child(1) > .leading-relaxed.mb-6.text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-vacas\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-vacas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-vacas > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(1) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-vacas > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-vacas\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-vacas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-vacas > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(2) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-vacas > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-vacas\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-vacas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-vacas > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(3) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-vacas > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-vacas\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-vacas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-vacas > div:nth-child(1) > dl > .text-neutral-700.gap-2.items-center:nth-child(4) > dd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<dl class=\"grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3\">",
+                  "target": [
+                    "#route-vacas > div:nth-child(1) > dl"
+                  ]
+                },
+                {
+                  "html": "<article id=\"route-vacas\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-vacas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-vacas > .pt-2.justify-between.gap-2 > div > .leading-none.block.text-2xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-vacas\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-vacas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#route-vacas > .pt-2.justify-between.gap-2 > div > .text-\\[10px\\].tracking-wider.text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article id=\"route-vacas\" tabindex=\"-1\" class=\"route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group\">",
+                  "target": [
+                    "#route-vacas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            "a[aria-label=\"Reservar 20 Lagunas de Vacas\"] > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "nonBmp"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".mb-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"absolute inset-0 bg-andino-wine/20 mix-blend-multiply\"></div>",
+                  "target": [
+                    ".bg-andino-wine\\/20"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-linear-to-r from-black/70 via-black/60 to-black/40\"></div>",
+                  "target": [
+                    ".bg-linear-to-r"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:text-7xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "33.0pt (44px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"absolute inset-0 bg-andino-wine/20 mix-blend-multiply\"></div>",
+                  "target": [
+                    ".bg-andino-wine\\/20"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-linear-to-r from-black/70 via-black/60 to-black/40\"></div>",
+                  "target": [
+                    ".bg-linear-to-r"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".text-neutral-200"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.922 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.922 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"absolute inset-0 bg-andino-wine/20 mix-blend-multiply\"></div>",
+                  "target": [
+                    ".bg-andino-wine\\/20"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-linear-to-r from-black/70 via-black/60 to-black/40\"></div>",
+                  "target": [
+                    ".bg-linear-to-r"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.922 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".bg-amber-400 > .text-xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "nonBmp"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".lg\\:col-span-4.space-y-4:nth-child(1) > .tracking-wide"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xs\">",
+                  "target": [
+                    ".sm\\:p-10"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:text-sm.leading-relaxed.text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xs\">",
+                  "target": [
+                    ".sm\\:p-10"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".hover\\:text-andino-wineDark > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "nonBmp"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".bg-amber-50\\/50.border-amber-200\\/60.hover\\:bg-amber-50:nth-child(1) > .flex-1 > .text-\\[11px\\].text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffcf2",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center gap-4 p-3 rounded-2xl bg-amber-50/50 border border-amber-200/60 hover:bg-amber-50 transition\">",
+                  "target": [
+                    ".bg-amber-50\\/50.border-amber-200\\/60.hover\\:bg-amber-50:nth-child(1)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xs\">",
+                  "target": [
+                    ".sm\\:p-10"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".bg-amber-50\\/50.border-amber-200\\/60.hover\\:bg-amber-50:nth-child(2) > .flex-1 > .text-\\[11px\\].text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffcf2",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center gap-4 p-3 rounded-2xl bg-amber-50/50 border border-amber-200/60 hover:bg-amber-50 transition\">",
+                  "target": [
+                    ".bg-amber-50\\/50.border-amber-200\\/60.hover\\:bg-amber-50:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xs\">",
+                  "target": [
+                    ".sm\\:p-10"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".bg-amber-50\\/50.border-amber-200\\/60.hover\\:bg-amber-50:nth-child(3) > .flex-1 > .text-\\[11px\\].text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffcf2",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center gap-4 p-3 rounded-2xl bg-amber-50/50 border border-amber-200/60 hover:bg-amber-50 transition\">",
+                  "target": [
+                    ".bg-amber-50\\/50.border-amber-200\\/60.hover\\:bg-amber-50:nth-child(3)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xs\">",
+                  "target": [
+                    ".sm\\:p-10"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".bg-amber-50\\/50.border-amber-200\\/60.hover\\:bg-amber-50:nth-child(4) > .flex-1 > .text-\\[11px\\].text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffcf2",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center gap-4 p-3 rounded-2xl bg-amber-50/50 border border-amber-200/60 hover:bg-amber-50 transition\">",
+                  "target": [
+                    ".bg-amber-50\\/50.border-amber-200\\/60.hover\\:bg-amber-50:nth-child(4)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xs\">",
+                  "target": [
+                    ".sm\\:p-10"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".bg-amber-50\\/50.border-amber-200\\/60.hover\\:bg-amber-50:nth-child(5) > .flex-1 > .text-\\[11px\\].text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffcf2",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center gap-4 p-3 rounded-2xl bg-amber-50/50 border border-amber-200/60 hover:bg-amber-50 transition\">",
+                  "target": [
+                    ".bg-amber-50\\/50.border-amber-200\\/60.hover\\:bg-amber-50:nth-child(5)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xs\">",
+                  "target": [
+                    ".sm\\:p-10"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".tracking-wide.mt-1.font-semibold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#f8f3ea",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-home font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".gap-3:nth-child(1) > div > .block.text-neutral-800.font-bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-4 bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between shadow-xs\">",
+                  "target": [
+                    ".bg-\\[\\#FFFDF9\\].lg\\:col-span-4.border-\\[\\#E8DEC8\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".gap-3:nth-child(1) > div > .text-neutral-500.text-\\[11px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.556 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.556 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-4 bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between shadow-xs\">",
+                  "target": [
+                    ".bg-\\[\\#FFFDF9\\].lg\\:col-span-4.border-\\[\\#E8DEC8\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.556 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".gap-3:nth-child(2) > div > .block.text-neutral-800.font-bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-4 bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between shadow-xs\">",
+                  "target": [
+                    ".bg-\\[\\#FFFDF9\\].lg\\:col-span-4.border-\\[\\#E8DEC8\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".gap-3:nth-child(2) > div > .text-neutral-500.text-\\[11px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.556 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.556 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-4 bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between shadow-xs\">",
+                  "target": [
+                    ".bg-\\[\\#FFFDF9\\].lg\\:col-span-4.border-\\[\\#E8DEC8\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.556 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".gap-3:nth-child(3) > div > .block.text-neutral-800.font-bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-4 bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between shadow-xs\">",
+                  "target": [
+                    ".bg-\\[\\#FFFDF9\\].lg\\:col-span-4.border-\\[\\#E8DEC8\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".gap-3:nth-child(3) > div > .text-neutral-500.text-\\[11px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.556 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.556 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-4 bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between shadow-xs\">",
+                  "target": [
+                    ".bg-\\[\\#FFFDF9\\].lg\\:col-span-4.border-\\[\\#E8DEC8\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.556 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".gap-3:nth-child(4) > div > .block.text-neutral-800.font-bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-4 bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between shadow-xs\">",
+                  "target": [
+                    ".bg-\\[\\#FFFDF9\\].lg\\:col-span-4.border-\\[\\#E8DEC8\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".gap-3:nth-child(4) > div > .text-neutral-500.text-\\[11px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.556 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffdf9",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.556 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lg:col-span-4 bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between shadow-xs\">",
+                  "target": [
+                    ".bg-\\[\\#FFFDF9\\].lg\\:col-span-4.border-\\[\\#E8DEC8\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.556 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".bg-amber-50 > .text-\\[11px\\].text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fffbeb",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-amber-50 rounded-2xl p-4 text-xs text-neutral-700 space-y-1\"><p class=\"font-semibold text-andino-wine\">¿Requieres transporte privado?</p><p class=\"text-[11px] text-neutral-600\">Coordinamos traslados desde aeropuertos de La Paz (LPB) y Cochabamba (CBB).</p></div>",
+                  "target": [
+                    ".bg-amber-50"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".bg-white\\/90"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.371 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fdfcfb",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.371 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"text-xs bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full font-semibold shadow-xs text-neutral-700 flex items-center gap-2\"><span class=\"w-2 h-2 rounded-full bg-green-500\"></span> Mapa Topográfico Andino </span>",
+                  "target": [
+                    ".bg-white\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"lg:col-span-8 bg-[#E9E4D4] rounded-3xl border border-[#D5C9B3] overflow-hidden relative min-h-[380px] shadow-inner flex flex-col justify-between p-4\" data-purpose=\"interactive-map-canvas\">",
+                  "target": [
+                    ".lg\\:col-span-8"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.371 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".border-blue-400 > .text-neutral-800.text-\\[11px\\].font-bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center gap-1.5 bg-white/95 px-2.5 py-1 rounded-full shadow-md border border-blue-400 group-hover:scale-110 transition\"><span class=\"w-3 h-3 rounded-full bg-blue-600\"></span><span class=\"text-[11px] font-bold text-neutral-800\">Camino de la Muerte</span></div>",
+                  "target": [
+                    ".border-blue-400"
+                  ]
+                },
+                {
+                  "html": "<svg class=\"w-full h-full opacity-35\" preserveAspectRatio=\"none\" viewBox=\"0 0 800 400\" aria-hidden=\"true\" focusable=\"false\">",
+                  "target": [
+                    ".opacity-35"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".top-\\[44\\%\\] > .border-red-400.bg-white\\/95.group-hover\\:scale-110 > .text-neutral-800.text-\\[11px\\].font-bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center gap-1.5 bg-white/95 px-2.5 py-1 rounded-full shadow-md border border-red-400 group-hover:scale-110 transition\"><span class=\"w-3 h-3 rounded-full bg-red-600\"></span><span class=\"text-[11px] font-bold text-neutral-800\">Camino del Choro</span></div>",
+                  "target": [
+                    ".top-\\[44\\%\\] > .border-red-400.bg-white\\/95.group-hover\\:scale-110"
+                  ]
+                },
+                {
+                  "html": "<svg class=\"w-full h-full opacity-35\" preserveAspectRatio=\"none\" viewBox=\"0 0 800 400\" aria-hidden=\"true\" focusable=\"false\">",
+                  "target": [
+                    ".opacity-35"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".border-amber-400.bg-white\\/95.group-hover\\:scale-110 > .text-neutral-800.text-\\[11px\\].font-bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center gap-1.5 bg-white/95 px-2.5 py-1 rounded-full shadow-md border border-amber-400 group-hover:scale-110 transition\"><span class=\"w-3 h-3 rounded-full bg-amber-500\"></span><span class=\"text-[11px] font-bold text-neutral-800\">Isla del Sol (Titicaca)</span></div>",
+                  "target": [
+                    ".border-amber-400.bg-white\\/95.group-hover\\:scale-110"
+                  ]
+                },
+                {
+                  "html": "<svg class=\"w-full h-full opacity-35\" preserveAspectRatio=\"none\" viewBox=\"0 0 800 400\" aria-hidden=\"true\" focusable=\"false\">",
+                  "target": [
+                    ".opacity-35"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".top-\\[70\\%\\] > .border-red-400.bg-white\\/95.group-hover\\:scale-110 > .text-neutral-800.text-\\[11px\\].font-bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center gap-1.5 bg-white/95 px-2.5 py-1 rounded-full shadow-md border border-red-400 group-hover:scale-110 transition\"><span class=\"w-3 h-3 rounded-full bg-red-600\"></span><span class=\"text-[11px] font-bold text-neutral-800\">Pico Tunari</span></div>",
+                  "target": [
+                    ".top-\\[70\\%\\] > .border-red-400.bg-white\\/95.group-hover\\:scale-110"
+                  ]
+                },
+                {
+                  "html": "<svg class=\"w-full h-full opacity-35\" preserveAspectRatio=\"none\" viewBox=\"0 0 800 400\" aria-hidden=\"true\" focusable=\"false\">",
+                  "target": [
+                    ".opacity-35"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".top-\\[84\\%\\] > .border-red-400.bg-white\\/95.group-hover\\:scale-110 > .text-neutral-800.text-\\[11px\\].font-bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.269 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.269 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center gap-1.5 bg-white/95 px-2.5 py-1 rounded-full shadow-md border border-red-400 group-hover:scale-110 transition\"><span class=\"w-3 h-3 rounded-full bg-red-600\"></span><span class=\"text-[11px] font-bold text-neutral-800\">20 Lagunas de Vacas</span></div>",
+                  "target": [
+                    ".top-\\[84\\%\\] > .border-red-400.bg-white\\/95.group-hover\\:scale-110"
+                  ]
+                },
+                {
+                  "html": "<svg class=\"w-full h-full opacity-35\" preserveAspectRatio=\"none\" viewBox=\"0 0 800 400\" aria-hidden=\"true\" focusable=\"false\">",
+                  "target": [
+                    ".opacity-35"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.269 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".bg-white\\/80 > .text-\\[11px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#fbfaf6",
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flex items-center justify-between text-xs text-neutral-600 bg-white/80 backdrop-blur-sm p-2 rounded-xl\">",
+                  "target": [
+                    ".bg-white\\/80"
+                  ]
+                },
+                {
+                  "html": "<div class=\"lg:col-span-8 bg-[#E9E4D4] rounded-3xl border border-[#D5C9B3] overflow-hidden relative min-h-[380px] shadow-inner flex flex-col justify-between p-4\" data-purpose=\"interactive-map-canvas\">",
+                  "target": [
+                    ".lg\\:col-span-8"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".space-y-2:nth-child(1) > .leading-relaxed.text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#f8f3ea",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-home font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".space-y-2:nth-child(2) > .leading-relaxed.text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#f8f3ea",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-home font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".space-y-2:nth-child(3) > .leading-relaxed.text-neutral-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Could not parse color string oklch(0.439 0 none)",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "bgColor": "#f8f3ea",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "colorParse",
+                "expectedContrastRatio": "4.5:1",
+                "colorParse": "oklch(0.439 0 none)"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-home font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Could not parse color string oklch(0.439 0 none)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "passedRules": [
+    "aria-allowed-attr",
+    "aria-allowed-role",
+    "aria-conditional-attr",
+    "aria-deprecated-role",
+    "aria-hidden-body",
+    "aria-hidden-focus",
+    "aria-prohibited-attr",
+    "aria-required-attr",
+    "aria-roles",
+    "aria-valid-attr-value",
+    "aria-valid-attr",
+    "avoid-inline-spacing",
+    "button-name",
+    "bypass",
+    "color-contrast",
+    "definition-list",
+    "dlitem",
+    "document-title",
+    "duplicate-id-aria",
+    "empty-heading",
+    "heading-order",
+    "html-has-lang",
+    "html-lang-valid",
+    "image-alt",
+    "image-redundant-alt",
+    "landmark-banner-is-top-level",
+    "landmark-contentinfo-is-top-level",
+    "landmark-main-is-top-level",
+    "landmark-no-duplicate-banner",
+    "landmark-no-duplicate-contentinfo",
+    "landmark-no-duplicate-main",
+    "landmark-one-main",
+    "landmark-unique",
+    "link-name",
+    "list",
+    "listitem",
+    "meta-viewport-large",
+    "meta-viewport",
+    "nested-interactive",
+    "page-has-heading-one",
+    "region",
+    "role-img-alt",
+    "skip-link",
+    "tabindex"
+  ]
+}

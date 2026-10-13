@@ -1,0 +1,23 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "title": "Ruta Andina — Trekking, ciclismo y turismo en Bolivia",
+    "heading": " EXPLORA LA ESENCIA DE BOLIVIA",
+    "jsErrors": []
+  },
+  {
+    "route": "/nosotros",
+    "status": 200,
+    "title": "Nosotros | Ruta Andina",
+    "heading": "NOSOTROS",
+    "jsErrors": []
+  },
+  {
+    "route": "/reservas",
+    "status": 200,
+    "title": "Reservas | Ruta Andina",
+    "heading": "RESERVA",
+    "jsErrors": []
+  }
+]

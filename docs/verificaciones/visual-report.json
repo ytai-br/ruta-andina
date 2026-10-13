@@ -1,0 +1,128 @@
+[
+  {
+    "route": "/",
+    "device": "desktop",
+    "screenshot": "docs/verificaciones/inicio-desktop.png",
+    "title": "Ruta Andina — Trekking, ciclismo y turismo en Bolivia",
+    "width": 1440,
+    "documentWidth": 1440,
+    "font": "\"Montserrat Variable\", sans-serif",
+    "background": "rgb(248, 243, 234)",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "IMG",
+        "className": "w-full h-full object-cover object-center scale-105 filter brightness-[0.78] contrast-105"
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "device": "mobile",
+    "screenshot": "docs/verificaciones/inicio-mobile.png",
+    "title": "Ruta Andina — Trekking, ciclismo y turismo en Bolivia",
+    "width": 375,
+    "documentWidth": 375,
+    "font": "\"Montserrat Variable\", sans-serif",
+    "background": "rgb(248, 243, 234)",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "IMG",
+        "className": "w-full h-full object-cover object-center scale-105 filter brightness-[0.78] contrast-105"
+      }
+    ]
+  },
+  {
+    "route": "/nosotros",
+    "device": "desktop",
+    "screenshot": "docs/verificaciones/nosotros-desktop.png",
+    "title": "Nosotros | Ruta Andina",
+    "width": 1440,
+    "documentWidth": 1440,
+    "font": "\"Inter Variable\", sans-serif",
+    "background": "rgb(251, 247, 240)",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "svg",
+        "className": "w-96 h-96 -ml-20 text-brand-red stroke-current fill-none"
+      },
+      {
+        "tag": "path",
+        "className": null
+      },
+      {
+        "tag": "svg",
+        "className": "w-96 h-96 -mr-20 text-brand-red stroke-current fill-none"
+      },
+      {
+        "tag": "path",
+        "className": null
+      }
+    ]
+  },
+  {
+    "route": "/nosotros",
+    "device": "mobile",
+    "screenshot": "docs/verificaciones/nosotros-mobile.png",
+    "title": "Nosotros | Ruta Andina",
+    "width": 375,
+    "documentWidth": 375,
+    "font": "\"Inter Variable\", sans-serif",
+    "background": "rgb(251, 247, 240)",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "svg",
+        "className": "w-96 h-96 -ml-20 text-brand-red stroke-current fill-none"
+      },
+      {
+        "tag": "path",
+        "className": null
+      },
+      {
+        "tag": "svg",
+        "className": "w-96 h-96 -mr-20 text-brand-red stroke-current fill-none"
+      },
+      {
+        "tag": "path",
+        "className": null
+      }
+    ]
+  },
+  {
+    "route": "/reservas",
+    "device": "desktop",
+    "screenshot": "docs/verificaciones/reservas-desktop.png",
+    "title": "Reservas | Ruta Andina",
+    "width": 1440,
+    "documentWidth": 1440,
+    "font": "\"Plus Jakarta Sans Variable\", sans-serif",
+    "background": "rgb(248, 243, 235)",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "IMG",
+        "className": "w-full h-full object-cover object-center scale-105 brightness-[0.92] contrast-[1.05]"
+      }
+    ]
+  },
+  {
+    "route": "/reservas",
+    "device": "mobile",
+    "screenshot": "docs/verificaciones/reservas-mobile.png",
+    "title": "Reservas | Ruta Andina",
+    "width": 375,
+    "documentWidth": 375,
+    "font": "\"Plus Jakarta Sans Variable\", sans-serif",
+    "background": "rgb(248, 243, 235)",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "IMG",
+        "className": "w-full h-full object-cover object-center scale-105 brightness-[0.92] contrast-[1.05]"
+      }
+    ]
+  }
+]

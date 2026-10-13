@@ -1,0 +1,81 @@
+{
+  "title": "Reservas | Ruta Andina",
+  "description": "Solicita tu reserva para experiencias de trekking, ciclismo y turismo en Bolivia con Ruta Andina. Elige una ruta; la disponibilidad debe confirmarse.",
+  "lang": "es",
+  "headings": [
+    {
+      "level": 1,
+      "text": "RESERVA"
+    },
+    {
+      "level": 2,
+      "text": "PLANIFICA TU AVENTURA"
+    },
+    {
+      "level": 2,
+      "text": "¿QUÉ AVENTURA QUIERES VIVIR?"
+    },
+    {
+      "level": 3,
+      "text": "El Camino de la Muerte"
+    },
+    {
+      "level": 3,
+      "text": "El Camino del Choro"
+    },
+    {
+      "level": 3,
+      "text": "Isla del Sol"
+    },
+    {
+      "level": 3,
+      "text": "Pico Tunari"
+    },
+    {
+      "level": 3,
+      "text": "20 Lagunas de Vacas"
+    },
+    {
+      "level": 2,
+      "text": "MÉTODOS DE PAGO"
+    },
+    {
+      "level": 3,
+      "text": "PAGO POR QR BANCARIO"
+    },
+    {
+      "level": 3,
+      "text": "PAGO INTERNACIONAL"
+    },
+    {
+      "level": 2,
+      "text": "VERIFICA TU RESERVA"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/reservas-01.jpg",
+      "alt": "Excursionistas con mochilas frente a laguna y cordillera andina"
+    },
+    {
+      "src": "/images/reservas-02.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/images/reservas-03.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/images/reservas-04.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/images/reservas-05.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/images/reservas-06.jpg",
+      "alt": ""
+    }
+  ]
+}

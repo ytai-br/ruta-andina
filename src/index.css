@@ -1,0 +1,58 @@
+@import "@fontsource-variable/montserrat/wght.css";
+@import "@fontsource-variable/oswald/wght.css";
+@import "@fontsource-variable/inter/wght.css";
+@import "@fontsource-variable/plus-jakarta-sans/wght.css";
+@import "@fontsource/bebas-neue/latin-400.css";
+@import "@fontsource/permanent-marker/latin-400.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "tailwindcss" source(none);
+@config "../tailwind.config.js";
+@source "./";
+
+.ruta-swal-popup {
+  border: 1px solid #e7ddd0;
+  border-radius: 1.25rem;
+  background: #fffdf9;
+  color: #24201e;
+  font-family: 'Montserrat Variable', Montserrat, sans-serif;
+  box-shadow: 0 24px 70px rgb(36 32 30 / 22%);
+}
+.ruta-swal-title {
+  color: #98262c;
+  font-family: 'Oswald Variable', Oswald, sans-serif;
+  letter-spacing: .035em;
+}
+.ruta-swal-content {
+  color: #403a36;
+  font-family: 'Montserrat Variable', Montserrat, sans-serif;
+  white-space: pre-line;
+  line-height: 1.65;
+}
+.ruta-swal-confirm {
+  min-height: 2.75rem;
+  padding: .7rem 1.4rem;
+  border: 0;
+  border-radius: .75rem;
+  background: #98262c;
+  color: white;
+  font-family: 'Oswald Variable', Oswald, sans-serif;
+  font-size: 1rem;
+  letter-spacing: .06em;
+  cursor: pointer;
+}
+.ruta-swal-confirm:focus-visible { outline: 3px solid #d97706; outline-offset: 3px; }
+.ruta-swal-confirm-success { background: #15803d; }
+.ruta-swal-confirm-success:hover { background: #166534; }
+
+@layer base {
+  :root { --font-body: 'Montserrat Variable'; color: #24201E; background: #F8F3EA; }
+  html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
+  body { margin: 0; min-width: 320px; }
+  button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+  button:not(:disabled), select { cursor: pointer; }
+  input, select, textarea { max-width: 100%; }
+  :focus-visible { outline: 3px solid #D97706; outline-offset: 4px; }
+  [id] { scroll-margin-top: 7rem; }
+  ::selection { color: white; background: #98262C; }
+}
+

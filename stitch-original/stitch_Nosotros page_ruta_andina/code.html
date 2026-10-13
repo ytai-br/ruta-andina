@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ruta Andina - Nosotros</title>
+<!-- Google Fonts: Bebas Neue for rustic outdoor headings, Inter for clean body copy -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;500;600;700&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Custom Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#98262C',
+              redHover: '#7f1f24',
+              wineDark: '#541216',
+              wineFooter: '#5c1318',
+              beigeBg: '#FBF7F0',
+              creamCard: '#F5EFE6',
+              lightCard: '#FAF4EC',
+              earthDark: '#26211E',
+              lineGray: '#E5DCD0'
+            }
+          },
+          fontFamily: {
+            bebas: ['"Bebas Neue"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif'],
+            marker: ['"Permanent Marker"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Typography & Specific Graphic Details -->
+<style data-purpose="typography">
+    .font-rustic {
+      font-family: 'Bebas Neue', cursive, sans-serif;
+      letter-spacing: 0.04em;
+    }
+  </style>
+<style data-purpose="layout-decorations">
+    /* Subtle Mountain Line Vector Background Pattern */
+    .bg-mountain-pattern {
+      background-image: radial-gradient(#98262c0a 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    
+    /* Paint brush stroke effect under hero banner title */
+    .brush-stroke {
+      position: relative;
+    }
+    .brush-stroke::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 7px;
+      background: #98262C;
+      border-radius: 4px;
+      transform: rotate(-1deg);
+    }
+  </style>
+</head>
+<body class="bg-brand-beigeBg text-brand-earthDark font-sans antialiased selection:bg-brand-red selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="w-full bg-[#FAF5EE] border-b border-[#EFE5D8] sticky top-0 z-50 shadow-sm transition-all" data-purpose="site-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+<!-- Left side: Nosotros Link/Icon -->
+<a class="flex items-center gap-2 group transition-transform active:scale-95" data-purpose="header-nav-nosotros" href="#nosotros">
+<svg class="w-6 h-6 text-brand-red fill-current transition-colors" viewbox="0 0 24 24">
+<path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path>
+</svg>
+<span class="font-rustic text-xl tracking-wider text-brand-red border-b-2 border-brand-red pb-0.5 font-bold">NOSOTROS</span>
+</a>
+<!-- Center: Logo -->
+<div class="flex flex-col items-center justify-center text-center" data-purpose="site-brand">
+<!-- Sun Spiral Icon -->
+<svg class="w-7 h-7 text-brand-red fill-none stroke-current stroke-2 mb-0.5" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="3.5"></circle>
+<path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77" stroke-linecap="round"></path>
+</svg>
+<h1 class="font-rustic text-2xl sm:text-3xl text-brand-red tracking-wider leading-none">RUTA ANDINA</h1>
+<span class="text-[9px] sm:text-[10px] tracking-widest text-[#5C4D44] font-semibold uppercase mt-0.5">TREKKING • CICLISMO • TURISMO</span>
+</div>
+<!-- Right side: Reservations Button -->
+<a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-redHover text-white px-4 sm:px-6 py-2 rounded-md font-rustic text-lg sm:text-xl tracking-wide shadow-sm hover:shadow-md transition-all active:scale-95" data-purpose="header-reservation-button" href="#reservas">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"></path>
+</svg>
+<span>RESERVAS →</span>
+</a>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroBanner -->
+<section class="relative w-full h-[380px] sm:h-[480px] lg:h-[540px] overflow-hidden" data-purpose="hero-section" id="nosotros">
+<!-- Background Panoramic Photo -->
+<img alt="Montañistas recorriendo senderos en la cordillera de los Andes con vista a lagunas de montaña" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBTAF2wBMcx9TUCkrt5_V9vrRjG2215b5FyKJs6QE8ovqvouaEanOt-1gTVX1EPQ-hAIvF2muDi7-IylmpS1qJM9T0lA1gni0vCH00N0Cz3b3JAbEptPyAo_indOd_hKdHFkrdz1XcZXUX6tJqY9aMw_hotYGc7XlbN6rzerjbYe6rOFENuMwcOWmkuUEvMc3Nnv7Oab4yyB4u7OvrxCrzKoAdzIOa186NcN4pbZYxItUY84kxC2k_"/>
+<!-- Gradient Overlay for Contrast -->
+<div class="absolute inset-0 bg-gradient-to-r from-black/25 via-transparent to-black/35"></div>
+<!-- Hero Heading Text -->
+<div class="absolute right-6 sm:right-16 md:right-24 top-1/2 -translate-y-1/2 text-right">
+<h2 class="font-rustic text-white text-5xl sm:text-7xl md:text-8xl tracking-wide drop-shadow-md select-none">
+          NOSOTROS
+        </h2>
+<div class="w-32 sm:w-44 h-1.5 sm:h-2 bg-brand-red ml-auto rounded-full mt-1 rotate-[-1deg] shadow"></div>
+</div>
+<!-- Slider indicator dots -->
+<div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-white shadow"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-white/60"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-white/60"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-white/60"></span>
+</div>
+</section>
+<!-- END: HeroBanner -->
+<!-- BEGIN: QuienesSomos -->
+<section class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-purpose="about-section">
+<!-- Section Title -->
+<div class="mb-10 text-center sm:text-left">
+<h2 class="font-rustic text-4xl sm:text-5xl text-brand-red tracking-wide uppercase inline-block">
+          ¿QUIÉNES SOMOS?
+        </h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Left: Adventure Image -->
+<div class="lg:col-span-7">
+<div class="relative rounded-2xl overflow-hidden shadow-lg border border-[#E9E0D2] group">
+<img alt="Montañistas contemplando la cordillera andina y lagunas" class="w-full h-[320px] sm:h-[400px] object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrcuwVHHfPWCVNSm0a-dB6xMLRWQ--ZoRniAmuBDqpd21NiF1cRUEe9hVSi9TRVqOv8uTy_tOov6y4oXtUDVBPWf8mFzW43BczKQ9J56oLsYOdet7S5JD0uRDtuCj6Fxd_FsVqNdwfwlc37Vd9ouUeVuOOOzEleQh_XZUJyFQ1lODofwu5udNIlTzW55tXkQXw-pX4_2uUKdwGB6kf4Esd9J4HSPnb4Ror5oGdPojy9Rb_LJ8qV5hZ"/>
+</div>
+</div>
+<!-- Right: Misión and Visión Cards -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Misión Card -->
+<div class="bg-brand-creamCard/80 border border-[#ECE2D5] rounded-2xl p-6 sm:p-7 flex items-start gap-5 shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:border-brand-red/40 transition-all" data-purpose="mission-card">
+<div class="w-14 h-14 rounded-full bg-brand-creamCard border border-brand-red/30 flex items-center justify-center shrink-0 shadow-sm">
+<svg class="w-7 h-7 text-brand-red" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9"></circle>
+<circle cx="12" cy="12" r="5"></circle>
+<circle cx="12" cy="12" fill="currentColor" r="1.5"></circle>
+</svg>
+</div>
+<div>
+<h3 class="font-rustic text-2xl sm:text-3xl text-brand-red tracking-wide uppercase mb-1">MISIÓN</h3>
+<p class="text-sm sm:text-base text-[#4A403A] leading-relaxed">
+                Ofrecer experiencias de aventura responsables, organizadas y memorables.
+              </p>
+</div>
+</div>
+<!-- Visión Card -->
+<div class="bg-brand-creamCard/80 border border-[#ECE2D5] rounded-2xl p-6 sm:p-7 flex items-start gap-5 shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:border-brand-red/40 transition-all" data-purpose="vision-card">
+<div class="w-14 h-14 rounded-full bg-brand-creamCard border border-brand-red/30 flex items-center justify-center shrink-0 shadow-sm">
+<svg class="w-7 h-7 text-brand-red" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 6.5a2 2 0 100-4 2 2 0 000 4zm7 2.5a4 4 0 00-4 4v7h2.5a1.5 1.5 0 001.5-1.5V9zm-14 0a4 4 0 014 4v7H6.5A1.5 1.5 0 015 18.5V9z"></path>
+<path d="M10 13a2 2 0 114 0v4h-4v-4z"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-rustic text-2xl sm:text-3xl text-brand-red tracking-wide uppercase mb-1">VISIÓN</h3>
+<p class="text-sm sm:text-base text-[#4A403A] leading-relaxed">
+                Ser un referente del turismo de aventura sostenible en Bolivia.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: QuienesSomos -->
+<!-- BEGIN: SecuritySection -->
+<section class="py-16 sm:py-20 relative overflow-hidden bg-brand-beigeBg border-t border-[#ECE2D5]" data-purpose="security-section">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Header row with Emergency Cross, Heading and Trail Graphic -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-12">
+<div class="flex items-center gap-4">
+<!-- Red Medical Cross Icon -->
+<div class="w-12 h-12 rounded-full bg-brand-red flex items-center justify-center text-white shrink-0 shadow-sm">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"></path>
+</svg>
+</div>
+<h2 class="font-rustic text-3xl sm:text-4xl lg:text-5xl text-brand-red tracking-wide uppercase">
+              TU SEGURIDAD ES NUESTRA PRIORIDAD
+            </h2>
+</div>
+<!-- Decorative Hiker Trail & Mountain Line Art -->
+<div class="hidden md:flex items-center gap-4 text-brand-red/80 select-none">
+<!-- Small Hiker Silhouette -->
+<svg class="w-8 h-8 fill-brand-red" viewbox="0 0 24 24">
+<path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7z"></path>
+</svg>
+<!-- Dotted Path -->
+<svg class="w-36 h-8 stroke-brand-red fill-none" stroke-dasharray="3 3" stroke-width="2">
+<path d="M2 15 C 20 28, 40 2, 70 14 C 95 24, 115 10, 140 12"></path>
+</svg>
+<!-- Outline Mountain & Sun -->
+<svg class="w-20 h-10 stroke-[#BFAEA2] fill-none" stroke-width="1.5">
+<path d="M2 28 L 14 8 L 22 18 L 32 4 L 46 28"></path>
+<circle cx="48" cy="8" r="4" stroke="#98262C"></circle>
+</svg>
+</div>
+</div>
+<!-- Description Paragraph -->
+<p class="max-w-4xl text-base sm:text-lg text-[#4A403A] leading-relaxed mb-12">
+          El trekking y el ciclismo de montaña son actividades que requieren preparación, responsabilidad y respeto por los riesgos naturales. En Ruta Andina planificamos cada experiencia priorizando la seguridad de nuestros visitantes.
+        </p>
+<!-- 5 Pillars Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-5">
+<!-- Card 1: Evaluación de rutas -->
+<div class="bg-brand-lightCard border border-[#E9DFD2] rounded-xl p-5 text-center flex flex-col items-center hover:border-brand-red/50 hover:shadow-md transition-all" data-purpose="safety-pillar">
+<div class="w-12 h-12 flex items-center justify-center text-brand-red mb-3">
+<svg class="w-8 h-8 fill-brand-red" viewbox="0 0 24 24">
+<path d="M14 6l-3.8 5L8 9.5 2 18h20L14 6zm-1.8 7l1.8-2.3L17.6 16H6.4l2.6-3.7 1.8 1.4 1.4-1.7zM18 2h2v4h-2V2z"></path>
+</svg>
+</div>
+<h4 class="font-rustic text-xl text-brand-red tracking-wide uppercase mb-2">Evaluación de rutas</h4>
+<p class="text-xs sm:text-sm text-[#594F48] leading-relaxed">
+              Analizamos la dificultad y las condiciones de cada ruta.
+            </p>
+</div>
+<!-- Card 2: Preparación adecuada -->
+<div class="bg-brand-lightCard border border-[#E9DFD2] rounded-xl p-5 text-center flex flex-col items-center hover:border-brand-red/50 hover:shadow-md transition-all" data-purpose="safety-pillar">
+<div class="w-12 h-12 flex items-center justify-center text-brand-red mb-3">
+<svg class="w-8 h-8 fill-brand-red" viewbox="0 0 24 24">
+<path d="M2 18v-2h2v-2c0-.55.45-1 1-1h1V9c0-1.1.9-2 2-2h3c.55 0 1 .45 1 1v2h2c.55 0 1 .45 1 1v3h2c.55 0 1 .45 1 1v1h2c1.1 0 2 .9 2 2v2H2zm4-4h2v-2H6v2zm4 0h2v-2h-2v2zm-4 4h14v-1h-2v-1h-3v-2H8v2H6v2z"></path>
+</svg>
+</div>
+<h4 class="font-rustic text-xl text-brand-red tracking-wide uppercase mb-2">Preparación adecuada</h4>
+<p class="text-xs sm:text-sm text-[#594F48] leading-relaxed">
+              Brindamos recomendaciones de preparación física y equipamiento.
+            </p>
+</div>
+<!-- Card 3: Comunicación -->
+<div class="bg-brand-lightCard border border-[#E9DFD2] rounded-xl p-5 text-center flex flex-col items-center hover:border-brand-red/50 hover:shadow-md transition-all" data-purpose="safety-pillar">
+<div class="w-12 h-12 flex items-center justify-center text-brand-red mb-3">
+<svg class="w-8 h-8 fill-brand-red" viewbox="0 0 24 24">
+<path d="M8.5 7h7c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-7C7.67 21 7 20.33 7 19.5v-11C7 7.67 7.67 7 8.5 7zM11 2h2v4h-2V2zm-1 9v2h4v-2h-4zm0 4v2h4v-2h-4z"></path>
+</svg>
+</div>
+<h4 class="font-rustic text-xl text-brand-red tracking-wide uppercase mb-2">Comunicación</h4>
+<p class="text-xs sm:text-sm text-[#594F48] leading-relaxed">
+              Mantenemos coordinación durante todas las excursiones.
+            </p>
+</div>
+<!-- Card 4: Protocolos de emergencia -->
+<div class="bg-brand-lightCard border border-[#E9DFD2] rounded-xl p-5 text-center flex flex-col items-center hover:border-brand-red/50 hover:shadow-md transition-all" data-purpose="safety-pillar">
+<div class="w-12 h-12 flex items-center justify-center text-brand-red mb-3">
+<svg class="w-8 h-8 fill-brand-red" viewbox="0 0 24 24">
+<path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2zm-1 9h-2v2H9v-2H7v-2h2v-2h2v2h2v2z"></path>
+</svg>
+</div>
+<h4 class="font-rustic text-xl text-brand-red tracking-wide uppercase mb-2">Protocolos de emergencia</h4>
+<p class="text-xs sm:text-sm text-[#594F48] leading-relaxed">
+              Contamos con un plan de respuesta ante accidentes y emergencias.
+            </p>
+</div>
+<!-- Card 5: Planificación -->
+<div class="bg-brand-lightCard border border-[#E9DFD2] rounded-xl p-5 text-center flex flex-col items-center hover:border-brand-red/50 hover:shadow-md transition-all" data-purpose="safety-pillar">
+<div class="w-12 h-12 flex items-center justify-center text-brand-red mb-3">
+<svg class="w-8 h-8 fill-brand-red" viewbox="0 0 24 24">
+<path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM10 17l-3.5-3.5 1.41-1.41L10 14.17l5.09-5.09L16.5 10.5 10 17z"></path>
+</svg>
+</div>
+<h4 class="font-rustic text-xl text-brand-red tracking-wide uppercase mb-2">Planificación</h4>
+<p class="text-xs sm:text-sm text-[#594F48] leading-relaxed">
+              Evaluamos las condiciones climáticas y planificamos cada salida de forma responsable.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SecuritySection -->
+<!-- BEGIN: CommunitiesSection -->
+<section class="py-16 sm:py-24 relative overflow-hidden bg-brand-beigeBg border-t border-[#ECE2D5]" data-purpose="communities-section">
+<!-- Mountain sketch illustration watermark in the background -->
+<div class="absolute inset-0 pointer-events-none opacity-10 flex items-center justify-between">
+<svg class="w-96 h-96 -ml-20 text-brand-red stroke-current fill-none" stroke-width="1.5">
+<path d="M0 300 L 120 120 L 180 200 L 260 80 L 380 300"></path>
+</svg>
+<svg class="w-96 h-96 -mr-20 text-brand-red stroke-current fill-none" stroke-width="1.5">
+<path d="M0 300 L 150 70 L 220 190 L 320 110 L 450 300"></path>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<!-- Header -->
+<div class="flex items-center gap-4 mb-10">
+<svg class="w-10 h-10 text-brand-red fill-current shrink-0" viewbox="0 0 24 24">
+<path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path>
+</svg>
+<h2 class="font-rustic text-3xl sm:text-4xl lg:text-5xl text-brand-red tracking-wide uppercase leading-tight">
+            AVENTURAS CON RESPETO POR NUESTRAS COMUNIDADES
+          </h2>
+</div>
+<!-- Content Grid: Text & Photo -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-12">
+<!-- Text Body -->
+<div class="lg:col-span-6">
+<p class="text-base sm:text-lg text-[#403630] leading-relaxed mb-6 font-normal">
+              En Ruta Andina promovemos el turismo responsable, el respeto por las costumbres, los territorios y las personas que habitan cerca de nuestros destinos. Trabajamos en coordinación con las comunidades locales y gestionamos los permisos cuando corresponde, valorando su conocimiento y su forma de vida.
+            </p>
+</div>
+<!-- Andean Community Interaction Image -->
+<div class="lg:col-span-6">
+<div class="relative rounded-2xl overflow-hidden shadow-lg border border-[#E7DDCE]">
+<img alt="Turista interactuando con personas y tradiciones andinas" class="w-full h-[280px] sm:h-[340px] object-cover hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoVyaTmD3Nf7Al9l-k5aNMa5mYUq4JOu7rDQRtuQlv-_hLuNetrJWaFAMPGItAqg8lLMRoziHAXKoXGbnr1sevkwxh67sVGeHJl2gGsTBKbVLgg3gD8yf4MXw0a0CCX2T19-9R0qkx-QGeC1VvaniKMaOxlBbZA7VXatxztAXYYa7tmCmADBxLVD-ExUgvbvBcZSKQDIVH3VS9UAFwvditJpNDnpjQZ8dlEER4cxIPxSLkbfNMKmgI"/>
+</div>
+</div>
+</div>
+<!-- Two Rounded Info Badges/Pills -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-[#ECE2D5]/70">
+<!-- Pill 1: Coordinación y permisos -->
+<div class="flex items-center gap-4 bg-brand-lightCard/90 border border-[#ECE2D5] rounded-xl p-4 sm:p-5 shadow-sm" data-purpose="community-value-card">
+<div class="w-12 h-12 rounded-full bg-brand-red text-white flex items-center justify-center shrink-0 shadow-sm">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-rustic text-xl sm:text-2xl text-brand-red tracking-wide uppercase">Coordinación y permisos</h4>
+<p class="text-xs sm:text-sm text-[#4E433D]">
+                Gestionamos los permisos comunitarios cuando corresponde.
+              </p>
+</div>
+</div>
+<!-- Pill 2: Protección del entorno -->
+<div class="flex items-center gap-4 bg-brand-lightCard/90 border border-[#ECE2D5] rounded-xl p-4 sm:p-5 shadow-sm" data-purpose="community-value-card">
+<div class="w-12 h-12 rounded-full bg-brand-red text-white flex items-center justify-center shrink-0 shadow-sm">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3 6 0 12-4 12-12zm-3 2c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-rustic text-xl sm:text-2xl text-brand-red tracking-wide uppercase">Protección del entorno</h4>
+<p class="text-xs sm:text-sm text-[#4E433D]">
+                Fomentamos el cuidado de los ecosistemas naturales y culturales.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CommunitiesSection -->
+<!-- BEGIN: NuestroCompromiso -->
+<section class="py-16 sm:py-24 bg-[#FAF5EE] border-t border-[#ECE2D5]" data-purpose="commitment-section">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Center Title -->
+<div class="text-center mb-12 sm:mb-16">
+<h2 class="font-rustic text-4xl sm:text-5xl lg:text-6xl text-brand-red tracking-wider uppercase">
+            NUESTRO COMPROMISO
+          </h2>
+</div>
+<!-- 3 Commitment Cards with Pictures and Details -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+<!-- Card 1: Seguridad y responsabilidad -->
+<article class="bg-white rounded-2xl overflow-hidden border border-[#E9DFD2] shadow-sm hover:shadow-lg transition-all flex flex-col group" data-purpose="commitment-card">
+<div class="h-56 sm:h-64 overflow-hidden relative">
+<img alt="Montañista con mochila recorriendo la cumbre de los Andes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvb7InTwegrZzKOtIdpOCnCTldZbEyGtmcjyqPPSYFZpguMkIKYBbLGu9kTEH2d4AuScXA_OqnF6hzbL-cBdqDDAR96eO4GxkXeb3UdgekOVaS8nDWJiUg0SuIvNvg8nZMTJ5OeJ3r_Ggrhqw-HGlnt5MyBgvPU0rUILYOZ8KFU2WCXOONxHE9U2paz_LKOTlABd8CCElchWBX24taYjgnaZp6SkriPfrN6GYwk0-7yoz6RUG1smZy"/>
+</div>
+<div class="p-6 flex items-start gap-4 flex-1 bg-[#FFFDFB]">
+<div class="w-12 h-12 rounded-full bg-brand-red text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7z"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-rustic text-2xl text-brand-red tracking-wide uppercase leading-tight mb-2">
+                  Seguridad y responsabilidad
+                </h3>
+<p class="text-sm text-[#594E47] leading-relaxed">
+                  Promovemos experiencias planificadas y una adecuada preparación.
+                </p>
+</div>
+</div>
+</article>
+<!-- Card 2: Turismo responsable -->
+<article class="bg-white rounded-2xl overflow-hidden border border-[#E9DFD2] shadow-sm hover:shadow-lg transition-all flex flex-col group" data-purpose="commitment-card">
+<div class="h-56 sm:h-64 overflow-hidden relative">
+<img alt="Laguna andina de aguas turquesas rodeada de montañas nevadas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW1qakyZMb2VoHZa6_itIwie4jDVd2y9Id9qL0jDTw-A5Fz7V_IZ3RsB3WsuO9JCPTWRmbfA3tz8fnW74nQx95oewRjn42HW4vHKrGo9vQPz_9tgYGOGBxWSQZSgYpUhIa-sTbPCtrNwH2iOlqR9GPwCm8IG6MMAB6gXVXoUCu3_tGVJzUNU2uCF3nMR0tzi-ehPxjf5XzKOoNmRKsQi0obFyDzw0XdnTCSCgkACGhLx7tZTqA7VeR"/>
+</div>
+<div class="p-6 flex items-start gap-4 flex-1 bg-[#FFFDFB]">
+<div class="w-12 h-12 rounded-full bg-brand-red text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3 6 0 12-4 12-12zm-3 2c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-rustic text-2xl text-brand-red tracking-wide uppercase leading-tight mb-2">
+                  Turismo responsable
+                </h3>
+<p class="text-sm text-[#594E47] leading-relaxed">
+                  Fomentamos el cuidado de la naturaleza y el respeto por las comunidades.
+                </p>
+</div>
+</div>
+</article>
+<!-- Card 3: Experiencias auténticas -->
+<article class="bg-white rounded-2xl overflow-hidden border border-[#E9DFD2] shadow-sm hover:shadow-lg transition-all flex flex-col group" data-purpose="commitment-card">
+<div class="h-56 sm:h-64 overflow-hidden relative">
+<img alt="Ciclista de montaña en ruta con vista a los Andes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT4TL_QmYyQZjm_i4Bx1FG4NUMhMqUVL7XxCOJiS4ZNiGPfVKWNvIW9YVTxwAncsw3-k98cKI0txCHrKGFq9S2QPIf1fW3tiofAAwofhIXZ5S6TwP4X_O_E6SRXYd1-fxXvXFPC3-TxukWNydp2TNB8aC3cSw8nW9kXmwA7KTRlzUQy4N9ymNxUbF4ya9YUh18M1mx0YWMruPfzckFMtwJHzek41eR22hnhG1fd-ydvm16KRrkXghJ"/>
+</div>
+<div class="p-6 flex items-start gap-4 flex-1 bg-[#FFFDFB]">
+<div class="w-12 h-12 rounded-full bg-brand-red text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-rustic text-2xl text-brand-red tracking-wide uppercase leading-tight mb-2">
+                  Experiencias auténticas
+                </h3>
+<p class="text-sm text-[#594E47] leading-relaxed">
+                  Buscamos conectar a los viajeros con la diversidad natural y cultural de Bolivia.
+                </p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: NuestroCompromiso -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="relative bg-brand-wineDark text-white pt-16 pb-12 overflow-hidden" data-purpose="site-footer">
+<!-- Mountain Silhouette on top of footer -->
+<div class="absolute top-0 left-0 right-0 h-10 w-full text-[#FAF5EE] overflow-hidden pointer-events-none">
+<svg class="relative block w-full h-10 fill-[#FAF5EE]" preserveaspectratio="none" viewbox="0 0 1200 120">
+<path d="M0,0 L150,90 L300,10 L450,80 L600,0 L750,90 L900,10 L1050,70 L1200,0 L1200,0 L0,0 Z"></path>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 pt-4">
+<!-- Center Branding (Mobile first order) -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left order-1 md:order-1">
+<div class="flex items-center gap-2 mb-1">
+<svg class="w-6 h-6 text-white fill-none stroke-current stroke-2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="3"></circle>
+<path d="M12 3v2M12 19v2M5 5l1.5 1.5M17.5 17.5l1.5 1.5M3 12h2M19 12h2M5 19l1.5-1.5M17.5 6.5l1.5-1.5" stroke-linecap="round"></path>
+</svg>
+<span class="font-rustic text-3xl tracking-wider text-white">RUTA ANDINA</span>
+</div>
+<span class="text-[10px] tracking-widest text-[#E6C6C6] uppercase font-medium">TREKKING • CICLISMO • TURISMO</span>
+</div>
+<!-- Social Media Icons & Credits -->
+<div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 order-2 md:order-2">
+<!-- Social Icons -->
+<div class="flex items-center gap-5">
+<!-- Instagram -->
+<a aria-label="Instagram" class="text-white hover:text-white/80 transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+<!-- Facebook -->
+<a aria-label="Facebook" class="text-white hover:text-white/80 transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path>
+</svg>
+</a>
+<!-- YouTube -->
+<a aria-label="YouTube" class="text-white hover:text-white/80 transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+</svg>
+</a>
+<!-- WhatsApp -->
+<a aria-label="WhatsApp" class="text-white hover:text-white/80 transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"></path>
+</svg>
+</a>
+</div>
+<div class="hidden sm:block h-5 w-[1px] bg-white/30"></div>
+<!-- Creator Tag -->
+<span class="text-xs text-[#E6C6C6] font-medium tracking-wide">
+          Creación por YTA
+        </span>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>

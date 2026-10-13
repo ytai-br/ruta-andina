@@ -1,0 +1,105 @@
+{
+  "url": "http://127.0.0.1:4175/nosotros",
+  "viewport": {
+    "width": 375,
+    "height": 1000
+  },
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": [
+        {
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "36.0pt (48px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"absolute inset-0 bg-linear-to-r from-black/25 via-black/25 to-black/60\"></div>",
+                  "target": [
+                    ".bg-linear-to-r"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".text-\\[\\#403630\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "passedRules": [
+    "aria-allowed-attr",
+    "aria-allowed-role",
+    "aria-conditional-attr",
+    "aria-deprecated-role",
+    "aria-hidden-body",
+    "aria-hidden-focus",
+    "aria-prohibited-attr",
+    "aria-required-attr",
+    "aria-roles",
+    "aria-valid-attr-value",
+    "aria-valid-attr",
+    "button-name",
+    "bypass",
+    "color-contrast",
+    "document-title",
+    "empty-heading",
+    "heading-order",
+    "html-has-lang",
+    "html-lang-valid",
+    "image-alt",
+    "image-redundant-alt",
+    "landmark-banner-is-top-level",
+    "landmark-contentinfo-is-top-level",
+    "landmark-main-is-top-level",
+    "landmark-no-duplicate-banner",
+    "landmark-no-duplicate-contentinfo",
+    "landmark-no-duplicate-main",
+    "landmark-one-main",
+    "landmark-unique",
+    "link-name",
+    "meta-viewport-large",
+    "meta-viewport",
+    "nested-interactive",
+    "page-has-heading-one",
+    "region",
+    "role-img-alt",
+    "skip-link",
+    "tabindex"
+  ]
+}

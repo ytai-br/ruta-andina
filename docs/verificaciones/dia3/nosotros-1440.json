@@ -1,0 +1,100 @@
+{
+  "url": "http://127.0.0.1:4175/nosotros",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": [
+        {
+          "target": [
+            ".sm\\:inline.hidden:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "nonBmp"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "72.0pt (96px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"absolute inset-0 bg-linear-to-r from-black/25 via-black/25 to-black/60\"></div>",
+                  "target": [
+                    ".bg-linear-to-r"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "passedRules": [
+    "aria-allowed-attr",
+    "aria-allowed-role",
+    "aria-conditional-attr",
+    "aria-deprecated-role",
+    "aria-hidden-body",
+    "aria-hidden-focus",
+    "aria-prohibited-attr",
+    "aria-required-attr",
+    "aria-roles",
+    "aria-valid-attr-value",
+    "aria-valid-attr",
+    "bypass",
+    "color-contrast",
+    "document-title",
+    "empty-heading",
+    "heading-order",
+    "html-has-lang",
+    "html-lang-valid",
+    "image-alt",
+    "image-redundant-alt",
+    "landmark-banner-is-top-level",
+    "landmark-contentinfo-is-top-level",
+    "landmark-main-is-top-level",
+    "landmark-no-duplicate-banner",
+    "landmark-no-duplicate-contentinfo",
+    "landmark-no-duplicate-main",
+    "landmark-one-main",
+    "landmark-unique",
+    "link-name",
+    "meta-viewport-large",
+    "meta-viewport",
+    "nested-interactive",
+    "page-has-heading-one",
+    "region",
+    "role-img-alt",
+    "skip-link",
+    "tabindex"
+  ]
+}

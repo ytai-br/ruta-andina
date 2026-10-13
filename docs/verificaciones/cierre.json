@@ -1,0 +1,16 @@
+﻿{
+  "date": "2026-10-12",
+  "timezone": "America/La_Paz",
+  "scope": "continuacion y cierre de integracion",
+  "build": { "exitCode": 0, "modules": 120 },
+  "lint": { "exitCode": 0 },
+  "unitTests": { "passed": 9, "failed": 0 },
+  "browserTests": { "channel": "msedge", "passed": 11, "failed": 0 },
+  "responsiveWidths": [320, 375, 768, 1440],
+  "axe": { "routes": ["/", "/nosotros", "/reservas"], "width": 1440, "violations": 0 },
+  "production": { "routesPassed": 3, "width": 375 },
+  "originals": { "filesUnchanged": 6, "algorithm": "SHA-256" },
+  "npmAudit": { "vulnerabilities": 0, "networkRetryRequired": true },
+  "supabaseConnected": false,
+  "screenshotsRegenerated": false
+}

@@ -1,0 +1,2188 @@
+{
+  "url": "http://127.0.0.1:4175/reservas",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": [
+        {
+          "target": [
+            ".text-lg.uppercase.brand-heading"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"site-header sticky top-0 z-50 border-b shadow-xs backdrop-blur-md\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent\"></div>",
+                  "target": [
+                    ".inset-0"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "nav > .site-logo[aria-label=\"Ruta Andina — Inicio\"][href=\"/\"] > .sm\\:text-3xl.brand-heading.text-2xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "22.5pt (30px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"site-header sticky top-0 z-50 border-b shadow-xs backdrop-blur-md\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent\"></div>",
+                  "target": [
+                    ".inset-0"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".text-\\[\\#5C4D44\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"site-header sticky top-0 z-50 border-b shadow-xs backdrop-blur-md\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent\"></div>",
+                  "target": [
+                    ".inset-0"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:inline.hidden:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "nonBmp"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "72.0pt (96px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent\"></div>",
+                  "target": [
+                    ".inset-0"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#booking-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "27.0pt (36px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#formulario-reserva > .mb-6.font-medium.text-stone-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "label[for=\"input-nombre\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#input-nombre"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<input id=\"input-nombre\" required=\"\" aria-invalid=\"true\" class=\"w-full min-w-0 text-...\" placeholder=\"Tu nombre completo\" autocomplete=\"name\" maxlength=\"120\" type=\"text\" value=\"\" name=\"nombre\" aria-describedby=\"error-nombre\">",
+                  "target": [
+                    "#input-nombre"
+                  ]
+                },
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#error-nombre"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "label[for=\"input-pais\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#input-pais"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<select id=\"input-pais\" name=\"pais\" required=\"\" aria-invalid=\"true\" class=\"w-full min-w-0 text-...\" autocomplete=\"country-name\" aria-describedby=\"error-pais\">",
+                  "target": [
+                    "#input-pais"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#error-pais"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "label[for=\"input-ciudad\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#input-ciudad"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<input id=\"input-ciudad\" required=\"\" aria-invalid=\"true\" class=\"w-full min-w-0 text-...\" placeholder=\"Tu ciudad\" autocomplete=\"address-level2\" maxlength=\"100\" type=\"text\" value=\"\" name=\"ciudad\" aria-describedby=\"error-ciudad\">",
+                  "target": [
+                    "#input-ciudad"
+                  ]
+                },
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#error-ciudad"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "label[for=\"input-whatsapp\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#input-whatsapp"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<input id=\"input-whatsapp\" required=\"\" aria-invalid=\"true\" class=\"w-full min-w-0 text-...\" placeholder=\"+591 71234567\" autocomplete=\"tel\" maxlength=\"30\" type=\"tel\" value=\"\" name=\"whatsapp\" aria-describedby=\"error-whatsapp\">",
+                  "target": [
+                    "#input-whatsapp"
+                  ]
+                },
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#error-whatsapp"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "label[for=\"input-personas\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#input-personas"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<select id=\"input-personas\" name=\"personas\" required=\"\" aria-invalid=\"false\" class=\"w-full min-w-0 text-sm bg-stone-50/70 border border-stone-300 rounded-xl px-3 py-2.5 text-stone-800 placeholder-stone-500 focus:ring-2 focus:ring-andino-red/30 focus:border-andino-red transition-all\">",
+                  "target": [
+                    "#input-personas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ]
+        },
+        {
+          "target": [
+            "label[for=\"input-fecha\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#input-fecha"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<input id=\"input-fecha\" required=\"\" aria-invalid=\"true\" class=\"w-full min-w-0 text-...\" min=\"2026-10-12\" type=\"date\" value=\"\" name=\"fecha\" aria-describedby=\"error-fecha\">",
+                  "target": [
+                    "#input-fecha"
+                  ]
+                },
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#error-fecha"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5\">",
+                  "target": [
+                    ".sm\\:p-7"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#experience-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "27.0pt (36px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:mb-8"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:grid-cols-3 > .select-none.adventure-card.block:nth-child(1) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5 > .leading-tight.max-w-36"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all hover:border-andino-red/50 hover:shadow-md h-full\">",
+                  "target": [
+                    ".sm\\:grid-cols-3 > .select-none.adventure-card.block:nth-child(1) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:grid-cols-3 > .select-none.adventure-card.block:nth-child(1) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5 > .gap-1\\.5.text-stone-600.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all hover:border-andino-red/50 hover:shadow-md h-full\">",
+                  "target": [
+                    ".sm\\:grid-cols-3 > .select-none.adventure-card.block:nth-child(1) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:grid-cols-3 > .select-none.adventure-card.block:nth-child(2) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5 > .leading-tight.max-w-36"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all hover:border-andino-red/50 hover:shadow-md h-full\">",
+                  "target": [
+                    ".sm\\:grid-cols-3 > .select-none.adventure-card.block:nth-child(2) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:grid-cols-3 > .select-none.adventure-card.block:nth-child(2) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5 > .gap-1\\.5.text-stone-600.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all hover:border-andino-red/50 hover:shadow-md h-full\">",
+                  "target": [
+                    ".sm\\:grid-cols-3 > .select-none.adventure-card.block:nth-child(2) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".select-none.adventure-card.block:nth-child(3) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5 > .leading-tight.max-w-36"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all hover:border-andino-red/50 hover:shadow-md h-full\">",
+                  "target": [
+                    ".select-none.adventure-card.block:nth-child(3) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".select-none.adventure-card.block:nth-child(3) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5 > .gap-1\\.5.text-stone-600.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all hover:border-andino-red/50 hover:shadow-md h-full\">",
+                  "target": [
+                    ".select-none.adventure-card.block:nth-child(3) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:grid-cols-2 > .select-none.adventure-card.block:nth-child(1) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5 > .leading-tight.max-w-36"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all hover:border-andino-red/50 hover:shadow-md h-full\">",
+                  "target": [
+                    ".sm\\:grid-cols-2 > .select-none.adventure-card.block:nth-child(1) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:grid-cols-2 > .select-none.adventure-card.block:nth-child(1) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5 > .gap-1\\.5.text-stone-600.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all hover:border-andino-red/50 hover:shadow-md h-full\">",
+                  "target": [
+                    ".sm\\:grid-cols-2 > .select-none.adventure-card.block:nth-child(1) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:grid-cols-2 > .select-none.adventure-card.block:nth-child(2) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5 > .leading-tight.max-w-36"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all hover:border-andino-red/50 hover:shadow-md h-full\">",
+                  "target": [
+                    ".sm\\:grid-cols-2 > .select-none.adventure-card.block:nth-child(2) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:grid-cols-2 > .select-none.adventure-card.block:nth-child(2) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5 > .gap-1\\.5.text-stone-600.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all hover:border-andino-red/50 hover:shadow-md h-full\">",
+                  "target": [
+                    ".sm\\:grid-cols-2 > .select-none.adventure-card.block:nth-child(2) > .card-border-indicator.border-stone-200\\/90.sm\\:p-5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".block.font-bold.sm\\:text-sm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<label class=\"adventure-card relative cursor-pointer flex items-center gap-3 bg-white/90 border border-stone-200 rounded-2xl p-3.5 sm:px-6 shadow-xs\">",
+                  "target": [
+                    ".p-3\\.5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "span:nth-child(4) > .text-stone-600.text-xs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<label class=\"adventure-card relative cursor-pointer flex items-center gap-3 bg-white/90 border border-stone-200 rounded-2xl p-3.5 sm:px-6 shadow-xs\">",
+                  "target": [
+                    ".p-3\\.5"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#payment-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "27.0pt (36px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "section[aria-labelledby=\"payment-title\"] > .font-medium.mb-5.text-stone-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(1) > div > .mb-3.gap-4.items-start > div > .sm\\:text-2xl.tracking-wider.leading-none"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col justify-between\">",
+                  "target": [
+                    ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(1)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(1) > div > .mb-3.gap-4.items-start > div > .mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col justify-between\">",
+                  "target": [
+                    ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(1)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(1) > div > .leading-relaxed.mb-5.text-stone-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col justify-between\">",
+                  "target": [
+                    ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(1)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(2) > div > .mb-3.gap-4.items-start > div > .sm\\:text-2xl.tracking-wider.leading-none"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col justify-between\">",
+                  "target": [
+                    ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(2) > div > .mb-3.gap-4.items-start > div > .mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col justify-between\">",
+                  "target": [
+                    ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(2) > div > .leading-relaxed.mb-5.text-stone-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/90 border border-andino-border/80 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col justify-between\">",
+                  "target": [
+                    ".sm\\:p-6.border-andino-border\\/80.justify-between:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#summary-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "27.0pt (36px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "section[aria-labelledby=\"summary-title\"] > .font-medium.mb-5.text-stone-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "dl:nth-child(1) > .items-start.gap-2.sm\\:text-sm:nth-child(1) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "dl:nth-child(1) > .items-start.gap-2.sm\\:text-sm:nth-child(2) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "dl:nth-child(1) > .items-start.gap-2.sm\\:text-sm:nth-child(3) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "dl:nth-child(1) > .items-start.gap-2.sm\\:text-sm:nth-child(4) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "dl:nth-child(2) > .items-start.gap-2.sm\\:text-sm:nth-child(1) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#summary-experiencia"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "dl:nth-child(2) > .items-start.gap-2.sm\\:text-sm:nth-child(2) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "dl:nth-child(2) > .items-start.gap-2.sm\\:text-sm:nth-child(3) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#summary-personas"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ]
+        },
+        {
+          "target": [
+            "dl:nth-child(2) > .items-start.gap-2.sm\\:text-sm:nth-child(4) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#summary-pago"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "label[for=\"input-observaciones\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#input-observaciones"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<textarea id=\"input-observaciones\" name=\"observaciones\" aria-invalid=\"false\" class=\"w-full min-w-0 text-...\" maxlength=\"1000\" placeholder=\"¿Tienes alguna prefe...\" rows=\"4\">",
+                  "target": [
+                    "#input-observaciones"
+                  ]
+                },
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".gap-2\\.5.cursor-pointer.items-start > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#error-confirmacion"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        },
+        {
+          "target": [
+            ".pt-2.gap-3.flex-col > .text-center.text-stone-600"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white/95 border border-andino-border/90 rounded-2xl p-5 sm:p-8 shadow-xs space-y-6\">",
+                  "target": [
+                    ".border-andino-border\\/90"
+                  ]
+                },
+                {
+                  "html": "<div class=\"site site-booking font-sans antialiased min-h-screen flex flex-col\">",
+                  "target": [
+                    ".site"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "passedRules": [
+    "aria-allowed-attr",
+    "aria-allowed-role",
+    "aria-conditional-attr",
+    "aria-deprecated-role",
+    "aria-hidden-body",
+    "aria-hidden-focus",
+    "aria-prohibited-attr",
+    "aria-required-attr",
+    "aria-roles",
+    "aria-valid-attr-value",
+    "aria-valid-attr",
+    "autocomplete-valid",
+    "button-name",
+    "bypass",
+    "color-contrast",
+    "definition-list",
+    "dlitem",
+    "document-title",
+    "duplicate-id-aria",
+    "empty-heading",
+    "form-field-multiple-labels",
+    "heading-order",
+    "html-has-lang",
+    "html-lang-valid",
+    "image-alt",
+    "image-redundant-alt",
+    "label-title-only",
+    "label",
+    "landmark-banner-is-top-level",
+    "landmark-contentinfo-is-top-level",
+    "landmark-main-is-top-level",
+    "landmark-no-duplicate-banner",
+    "landmark-no-duplicate-contentinfo",
+    "landmark-no-duplicate-main",
+    "landmark-one-main",
+    "landmark-unique",
+    "link-name",
+    "meta-viewport-large",
+    "meta-viewport",
+    "nested-interactive",
+    "page-has-heading-one",
+    "presentation-role-conflict",
+    "region",
+    "role-img-alt",
+    "select-name",
+    "skip-link",
+    "tabindex"
+  ]
+}

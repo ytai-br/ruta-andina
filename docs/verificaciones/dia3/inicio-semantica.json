@@ -1,0 +1,125 @@
+{
+  "title": "Ruta Andina — Trekking, ciclismo y turismo en Bolivia",
+  "description": "Explora experiencias de trekking, ciclismo y turismo responsable en Bolivia con Ruta Andina. Conoce el catálogo y prepara tu reserva.",
+  "lang": "es",
+  "headings": [
+    {
+      "level": 1,
+      "text": "EXPLORA LA ESENCIA DE BOLIVIA"
+    },
+    {
+      "level": 2,
+      "text": "CATÁLOGO"
+    },
+    {
+      "level": 3,
+      "text": "PRÓXIMAS SALIDAS"
+    },
+    {
+      "level": 3,
+      "text": "El Camino de la Muerte"
+    },
+    {
+      "level": 3,
+      "text": "El Camino del Choro"
+    },
+    {
+      "level": 3,
+      "text": "Isla del Sol"
+    },
+    {
+      "level": 3,
+      "text": "Pico Tunari"
+    },
+    {
+      "level": 3,
+      "text": "20 Lagunas de Vacas"
+    },
+    {
+      "level": 2,
+      "text": "¿ESTÁS LISTO?"
+    },
+    {
+      "level": 2,
+      "text": "PREPARACIÓN"
+    },
+    {
+      "level": 3,
+      "text": "EQUIPAMIENTO ESENCIAL"
+    },
+    {
+      "level": 4,
+      "text": "Ropa técnica"
+    },
+    {
+      "level": 4,
+      "text": "Calzado de trekking"
+    },
+    {
+      "level": 4,
+      "text": "Hidratación"
+    },
+    {
+      "level": 4,
+      "text": "Protección solar"
+    },
+    {
+      "level": 4,
+      "text": "Equipo de seguridad"
+    },
+    {
+      "level": 2,
+      "text": "MAPA"
+    },
+    {
+      "level": 3,
+      "text": "Leyenda de Puntos"
+    },
+    {
+      "level": 2,
+      "text": "Guías Certificados"
+    },
+    {
+      "level": 2,
+      "text": "Turismo Sostenible"
+    },
+    {
+      "level": 2,
+      "text": "Pasión Boliviana"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/inicio-01.jpg",
+      "alt": "Paisaje de la Cordillera de los Andes bolivianos con senderistas y laguna"
+    },
+    {
+      "src": "/images/inicio-02.jpg",
+      "alt": "Ciclista descendiendo por el Camino de la Muerte en los Yungas"
+    },
+    {
+      "src": "/images/inicio-03.jpg",
+      "alt": "Senderistas en la Cordillera Real rumbo a El Choro"
+    },
+    {
+      "src": "/images/inicio-04.jpg",
+      "alt": "Vista panorámica de la Isla del Sol en el Lago Titicaca"
+    },
+    {
+      "src": "/images/inicio-05.jpg",
+      "alt": "Majestuosa cumbre nevada del Pico Tunari en Cochabamba"
+    },
+    {
+      "src": "/images/inicio-06.jpg",
+      "alt": "Espejos de agua en las 20 Lagunas de Vacas Cochabamba"
+    },
+    {
+      "src": "/images/inicio-07.jpg",
+      "alt": "Excursionista con mochila contemplando la inmensidad de los Andes"
+    },
+    {
+      "src": "/images/inicio-08.jpg",
+      "alt": "Mochila técnica roja de alta montaña para expedición andina"
+    }
+  ]
+}

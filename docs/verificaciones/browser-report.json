@@ -1,0 +1,953 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\playwright.config.js",
+    "rootDir": "C:/Users/YTAI/Desktop/Ruta-Andina-React PROYECTO/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/YTAI/Desktop/Ruta-Andina-React PROYECTO/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/YTAI/Desktop/Ruta-Andina-React PROYECTO/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser",
+        "snapshotDir": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4175",
+          "channel": "msedge",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "timezoneId": "America/La_Paz",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/verificaciones/browser-report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node node_modules/vite/bin/vite.js --host 127.0.0.1 --port 4175 --strictPort",
+      "url": "http://127.0.0.1:4175",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "app.spec.js",
+      "file": "app.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "navegación SPA, ruta directa, metadatos y volver atrás",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12005,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:10:27.720Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-5f59b082f7378d8cbffa",
+          "file": "app.spec.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "menú móvil: teclado, Escape, navegación y cierre",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:10:42.806Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-3d2063bcb8b56ea38c51",
+          "file": "app.spec.js",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "catálogo selecciona la experiencia del formulario",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6463,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:10:50.099Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-ea97d9616cfa501e9270",
+          "file": "app.spec.js",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "formulario inválido muestra errores y enfoca el primer campo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5984,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:10:56.612Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-d710f246d96813174548",
+          "file": "app.spec.js",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "resumen reactivo y solicitud válida sin envío ni persistencia",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10345,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:11:02.625Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-974a199f0fe127e988d9",
+          "file": "app.spec.js",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "carrusel cambia de fotografía y mapa enlaza al catálogo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6702,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:11:13.012Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-b507b3a3e17b655c1829",
+          "file": "app.spec.js",
+          "line": 80,
+          "column": 1
+        },
+        {
+          "title": "responsive, recursos y accesibilidad: /",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13038,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:11:19.791Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-822a0b76b22b5abfcf4f",
+          "file": "app.spec.js",
+          "line": 91,
+          "column": 3
+        },
+        {
+          "title": "responsive, recursos y accesibilidad: /nosotros",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7426,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:11:32.919Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-3c127bb7c63abe00d825",
+          "file": "app.spec.js",
+          "line": 91,
+          "column": 3
+        },
+        {
+          "title": "responsive, recursos y accesibilidad: /reservas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7816,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:11:40.424Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-3ac2a74bf5ca18798a6a",
+          "file": "app.spec.js",
+          "line": 91,
+          "column": 3
+        },
+        {
+          "title": "ruta desconocida ofrece volver al inicio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5151,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:11:48.351Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-d3ae3c206841d468c56c",
+          "file": "app.spec.js",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "rutas con barra final y mayúsculas conservan tema y SEO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6046,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:11:53.559Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-9186b7b2ea2b3048495e",
+          "file": "app.spec.js",
+          "line": 117,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "day3.spec.js",
+      "file": "day3.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Día 3: SEO, imágenes y contraste móvil/escritorio — inicio",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 41222,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:11:59.801Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\test-results\\day3-Día-3-SEO-imágenes-y--38b92-e-móvil-escritorio-—-inicio\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\test-results\\day3-Día-3-SEO-imágenes-y--38b92-e-móvil-escritorio-—-inicio\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\test-results\\day3-Día-3-SEO-imágenes-y--38b92-e-móvil-escritorio-—-inicio\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e5f21366eefb7bb15286-8f2ab7df78b1638b442f",
+          "file": "day3.spec.js",
+          "line": 35,
+          "column": 3
+        },
+        {
+          "title": "Día 3: salto al contenido con teclado — inicio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10870,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:12:48.641Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e5f21366eefb7bb15286-b7e148468f784784c33e",
+          "file": "day3.spec.js",
+          "line": 74,
+          "column": 3
+        },
+        {
+          "title": "Día 3: SEO, imágenes y contraste móvil/escritorio — nosotros",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21414,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:13:00.925Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e5f21366eefb7bb15286-3470276064a90233557b",
+          "file": "day3.spec.js",
+          "line": 35,
+          "column": 3
+        },
+        {
+          "title": "Día 3: salto al contenido con teclado — nosotros",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5663,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:13:22.406Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e5f21366eefb7bb15286-b38029c58c517fb1f2f6",
+          "file": "day3.spec.js",
+          "line": 74,
+          "column": 3
+        },
+        {
+          "title": "Día 3: SEO, imágenes y contraste móvil/escritorio — reservas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21680,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:13:28.161Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e5f21366eefb7bb15286-54b46957a30727882db6",
+          "file": "day3.spec.js",
+          "line": 35,
+          "column": 3
+        },
+        {
+          "title": "Día 3: salto al contenido con teclado — reservas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6878,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:13:50.028Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e5f21366eefb7bb15286-a4a24edc859c2507bddb",
+          "file": "day3.spec.js",
+          "line": 74,
+          "column": 3
+        },
+        {
+          "title": "Día 3: menú móvil operable solo con teclado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 30808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:13:56.990Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e5f21366eefb7bb15286-906c6f996cf37cbcf590",
+          "file": "day3.spec.js",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "Día 3: catálogo recibe foco al seguir su enlace con teclado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15182,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:14:27.913Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e5f21366eefb7bb15286-e8ca319c1eefede13284",
+          "file": "day3.spec.js",
+          "line": 101,
+          "column": 1
+        },
+        {
+          "title": "Día 3: etiquetas, errores y controles del formulario con teclado",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2572,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4175/reservas\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4175/reservas\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4175/reservas\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4175/reservas\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser\\day3.spec.js:109:14",
+                    "location": {
+                      "file": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser\\day3.spec.js",
+                      "column": 14,
+                      "line": 109
+                    },
+                    "snippet": "  107 |\n  108 | test('Día 3: etiquetas, errores y controles del formulario con teclado', async ({ page }) => {\n> 109 |   await page.goto('/reservas')\n      |              ^\n  110 |   await expect(page.getByRole('heading', { name: '¿QUÉ AVENTURA QUIERES VIVIR?', level: 2 })).toBeVisible()\n  111 |   const controls = page.locator('input,select,textarea')\n  112 |   for (const control of await controls.all()) await expect(control).toHaveAccessibleName(/\\S/)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser\\day3.spec.js",
+                        "column": 14,
+                        "line": 109
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4175/reservas\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4175/reservas\", waiting until \"load\"\u001b[22m\n\n\n  107 |\n  108 | test('Día 3: etiquetas, errores y controles del formulario con teclado', async ({ page }) => {\n> 109 |   await page.goto('/reservas')\n      |              ^\n  110 |   await expect(page.getByRole('heading', { name: '¿QUÉ AVENTURA QUIERES VIVIR?', level: 2 })).toBeVisible()\n  111 |   const controls = page.locator('input,select,textarea')\n  112 |   for (const control of await controls.all()) await expect(control).toHaveAccessibleName(/\\S/)\n    at C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser\\day3.spec.js:109:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:14:43.250Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\test-results\\day3-Día-3-etiquetas-error-1d2ec--del-formulario-con-teclado\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\test-results\\day3-Día-3-etiquetas-error-1d2ec--del-formulario-con-teclado\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\test-results\\day3-Día-3-etiquetas-error-1d2ec--del-formulario-con-teclado\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser\\day3.spec.js",
+                    "column": 14,
+                    "line": 109
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e5f21366eefb7bb15286-6490f2711b53af2a1874",
+          "file": "day3.spec.js",
+          "line": 108,
+          "column": 1
+        },
+        {
+          "title": "Día 3: títulos y descripciones distintos tras navegación SPA",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2498,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4175/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4175/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4175/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4175/\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser\\day3.spec.js:136:14",
+                    "location": {
+                      "file": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser\\day3.spec.js",
+                      "column": 14,
+                      "line": 136
+                    },
+                    "snippet": "  134 |   const titles = new Set()\n  135 |   const descriptions = new Set()\n> 136 |   await page.goto('/')\n      |              ^\n  137 |   for (const route of ['/', '/nosotros', '/reservas']) {\n  138 |     if (route !== '/') await page.locator(`header a[href=\"${route}\"]`).first().click()\n  139 |     await expect(page).toHaveURL(route)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser\\day3.spec.js",
+                        "column": 14,
+                        "line": 136
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4175/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4175/\", waiting until \"load\"\u001b[22m\n\n\n  134 |   const titles = new Set()\n  135 |   const descriptions = new Set()\n> 136 |   await page.goto('/')\n      |              ^\n  137 |   for (const route of ['/', '/nosotros', '/reservas']) {\n  138 |     if (route !== '/') await page.locator(`header a[href=\"${route}\"]`).first().click()\n  139 |     await expect(page).toHaveURL(route)\n    at C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser\\day3.spec.js:136:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T05:14:50.259Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\test-results\\day3-Día-3-títulos-y-descr-dbc64-stintos-tras-navegación-SPA\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\test-results\\day3-Día-3-títulos-y-descr-dbc64-stintos-tras-navegación-SPA\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\test-results\\day3-Día-3-títulos-y-descr-dbc64-stintos-tras-navegación-SPA\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\YTAI\\Desktop\\Ruta-Andina-React PROYECTO\\tests\\browser\\day3.spec.js",
+                    "column": 14,
+                    "line": 136
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e5f21366eefb7bb15286-db381cae3612ce605e89",
+          "file": "day3.spec.js",
+          "line": 133,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-13T05:10:24.345Z",
+    "duration": 273649.619,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

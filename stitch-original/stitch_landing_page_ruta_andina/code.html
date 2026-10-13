@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ruta Andina - Trekking • Ciclismo • Turismo en Bolivia</title>
+<!-- Google Fonts: Oswald para títulos andinos rústicos y Montserrat para lectura limpia -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN con plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Custom Config -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            andino: {
+              wine: '#98262C',
+              wineDark: '#641419',
+              wineHover: '#7e1e24',
+              sand: '#FBF6EE',
+              sandDark: '#F2E8DA',
+              charcoal: '#24201E',
+              gold: '#D97706',
+              accent: '#B91C1C'
+            }
+          },
+          fontFamily: {
+            title: ['Oswald', 'sans-serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="base-styling">
+    body {
+      background-color: #F8F3EA;
+      color: #24201E;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-title {
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.04em;
+    }
+    /* Estilo del camino punteado topográfico */
+    .dotted-route-line {
+      background-image: radial-gradient(circle, #98262C 2.5px, transparent 2.5px);
+      background-size: 14px 14px;
+    }
+  </style>
+<style data-purpose="custom-elements">
+    /* Efecto de marco de foto de ruta circular */
+    .route-circle-photo {
+      box-shadow: 0 10px 25px -5px rgba(100, 20, 25, 0.25), 0 0 0 5px #FBF6EE, 0 0 0 7px #98262C;
+    }
+    /* Calendario interactivo andino */
+    .cal-day.active {
+      background-color: #98262C;
+      color: #ffffff;
+      border-radius: 9999px;
+      font-weight: 700;
+    }
+    /* Sombra suave de tarjetas de expedición */
+    .route-card-bg {
+      background: radial-gradient(circle at top, #ffffff, #FBF6EE);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-andino-wine selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#FBF6EE]/95 backdrop-blur-md border-b border-[#E8DEC8] px-4 lg:px-8 py-3.5 shadow-sm transition-all duration-300">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<!-- Botón Nosotros -->
+<a class="inline-flex items-center gap-2.5 text-andino-wine font-bold text-sm tracking-wider uppercase hover:text-andino-wineDark transition-colors group" href="#nosotros">
+<span class="p-2 rounded-full bg-red-100/60 group-hover:bg-red-200/60 transition-colors">
+<svg class="w-5 h-5 text-andino-wine" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+<span class="hidden sm:inline font-title tracking-widest text-base">NOSOTROS</span>
+</a>
+<!-- Logotipo Oficial Central -->
+<a class="flex flex-col items-center group text-center" href="#">
+<!-- Ícono del Sol Andino Radiante -->
+<svg class="w-8 h-8 text-andino-wine transform transition-transform group-hover:rotate-45 duration-700 mb-0.5" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2l1.6 3.6 3.9-.9-1.4 3.7 3.8 1.2-2.8 2.8 2.8 2.8-3.8 1.2 1.4 3.7-3.9-.9L12 22l-1.6-3.6-3.9.9 1.4-3.7-3.8-1.2 2.8-2.8-2.8-2.8 3.8-1.2-1.4-3.7 3.9.9L12 2zm0 6a4 4 0 100 8 4 4 0 000-8z"></path>
+</svg>
+<span class="font-title text-2xl sm:text-3xl font-bold tracking-tight text-andino-wine leading-none">RUTA ANDINA</span>
+<span class="text-[9px] sm:text-[10px] tracking-[0.28em] uppercase font-semibold text-andino-charcoal/80 mt-1">TREKKING • CICLISMO • TURISMO</span>
+</a>
+<!-- Botón Reservas Directas -->
+<button class="inline-flex items-center gap-2 bg-andino-wine hover:bg-andino-wineDark text-white px-4 sm:px-6 py-2.5 rounded-full font-title text-sm tracking-wider uppercase shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer" onclick="openBookingModal('General')">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span>RESERVAS</span>
+<span class="text-base font-bold leading-none">→</span>
+</button>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative bg-stone-900 text-white overflow-hidden py-12 lg:py-20" data-purpose="hero-carousel">
+<!-- Fondo panorámico de montañas con overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Paisaje de la Cordillera de los Andes bolivianos con senderistas y laguna" class="w-full h-full object-cover object-center scale-105 filter brightness-[0.78] contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_n4Q3hI1Ks5hGpnVYIcskx_k9OwdTUk4nIlI_2vxtqUdYrfp2tc9-JMHMqZWM_dlLmHIcsXNSBCK5m2i3ck9A2ursMtzWmnK8lvLdUPlFoPER96NPnL_d8A5qEAuZArbZfufTEVMpsKstG8WeaAnFaFAeO6cdMA6QJCWGkMqB98m92tdrglIKQR81bWHNKARaHz7lQvegcEueyZfqsoOiN34TWg6XCwke-vB6UaJg3rNUbGdfBDjm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#F8F3EA] via-transparent to-black/60"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+<!-- Flechas de carrusel simuladas a los lados -->
+<div class="w-full flex items-center justify-between mb-8 sm:mb-12 pointer-events-none">
+<button aria-label="Anterior" class="pointer-events-auto p-3 rounded-full bg-white/20 backdrop-blur-md hover:bg-white/40 text-white border border-white/30 transition transform hover:scale-110">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+<!-- Elemento central distintivo boliviano -->
+<div class="pointer-events-auto px-4 py-1.5 rounded-full bg-andino-wine/90 backdrop-blur-sm border border-red-300/40 text-xs uppercase tracking-widest font-semibold flex items-center gap-2 shadow-lg">
+<span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+            Experiencias Auténticas en Bolivia
+          </div>
+<button aria-label="Siguiente" class="pointer-events-auto p-3 rounded-full bg-white/20 backdrop-blur-md hover:bg-white/40 text-white border border-white/30 transition transform hover:scale-110">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+</div>
+<div class="max-w-3xl mx-auto space-y-4">
+<h1 class="font-title text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight uppercase drop-shadow-lg leading-tight">
+            EXPLORA LA ESENCIA <span class="text-amber-300">DE BOLIVIA</span>
+</h1>
+<p class="text-base sm:text-xl text-neutral-100 font-normal max-w-2xl mx-auto drop-shadow-md leading-relaxed">
+            Rutas auténticas, paisajes inolvidables y experiencias que te conectan con la naturaleza milenaria y la cultura andina.
+          </p>
+<div class="pt-6 flex flex-wrap items-center justify-center gap-4">
+<a class="px-8 py-3.5 rounded-full bg-andino-wine hover:bg-andino-wineDark text-white font-title text-lg tracking-wider uppercase transition shadow-xl transform hover:-translate-y-1" href="#catalogo">
+              Ver Catálogo de Rutas
+            </a>
+<a class="px-8 py-3.5 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md text-white border border-white/40 font-title text-lg tracking-wider uppercase transition shadow-lg" href="#nosotros">
+              Conócenos
+            </a>
+</div>
+</div>
+<!-- Puntos del carrusel -->
+<div class="flex items-center gap-2.5 mt-10">
+<span class="w-8 h-2 rounded-full bg-white transition-all"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition cursor-pointer"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition cursor-pointer"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition cursor-pointer"></span>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: CatalogSection -->
+<section class="relative py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" data-purpose="catalog-routes" id="catalogo">
+<!-- Encabezado de Catálogo y Próximas Salidas (Calendario) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
+<!-- Título Catálogo -->
+<div class="lg:col-span-5 pt-4">
+<div class="inline-flex items-center gap-2 text-andino-wine uppercase tracking-widest text-xs font-bold mb-2">
+<span class="w-8 h-0.5 bg-andino-wine"></span>
+            Aventuras Guiadas
+          </div>
+<h2 class="font-title text-5xl sm:text-6xl font-bold tracking-tight text-andino-wine uppercase">
+            CATÁLOGO
+          </h2>
+<p class="text-neutral-700 mt-3 text-sm sm:text-base leading-relaxed max-w-md">
+            Sigue las rutas ancestrales marcadas en nuestro mapa andino. Diseñadas para retar tus sentidos con seguridad profesional certificada.
+          </p>
+</div>
+<!-- Panel de Próximas Salidas con Calendario Interactivo -->
+<div class="lg:col-span-7 bg-[#FFFDF9] border border-[#E4D8C5] rounded-3xl p-5 sm:p-6 shadow-md" data-purpose="upcoming-calendar">
+<div class="flex flex-col md:flex-row gap-6 justify-between">
+<!-- Lista Próximas Salidas -->
+<div class="flex-1 space-y-3">
+<div class="flex items-center gap-2 text-andino-wine font-title text-xl font-bold border-b border-stone-200 pb-2">
+<svg class="w-5 h-5 text-andino-wine" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>PRÓXIMAS SALIDAS</span>
+</div>
+<ul class="space-y-2.5 text-xs sm:text-sm">
+<li class="flex items-center justify-between p-2 rounded-lg hover:bg-amber-50/60 transition cursor-pointer" onclick="selectRouteHighlight('death-road')">
+<span class="font-title font-bold text-andino-wine px-2 py-0.5 bg-red-100 rounded">18 OCT</span>
+<span class="font-medium text-neutral-800">Camino de la Muerte (Ciclismo)</span>
+<span class="text-xs text-green-700 font-semibold bg-green-100 px-2 py-0.5 rounded-full">Cupos</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg hover:bg-amber-50/60 transition cursor-pointer" onclick="selectRouteHighlight('pico-tunari')">
+<span class="font-title font-bold text-andino-wine px-2 py-0.5 bg-red-100 rounded">25 OCT</span>
+<span class="font-medium text-neutral-800">Pico Tunari (Trekking)</span>
+<span class="text-xs text-green-700 font-semibold bg-green-100 px-2 py-0.5 rounded-full">Cupos</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg hover:bg-amber-50/60 transition cursor-pointer" onclick="selectRouteHighlight('el-choro')">
+<span class="font-title font-bold text-andino-wine px-2 py-0.5 bg-red-100 rounded">08 NOV</span>
+<span class="font-medium text-neutral-800">Camino del Choro (Trekking)</span>
+<span class="text-xs text-amber-700 font-semibold bg-amber-100 px-2 py-0.5 rounded-full">Últimos</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg hover:bg-amber-50/60 transition cursor-pointer" onclick="selectRouteHighlight('isla-del-sol')">
+<span class="font-title font-bold text-andino-wine px-2 py-0.5 bg-red-100 rounded">15 NOV</span>
+<span class="font-medium text-neutral-800">Isla del Sol (Trekking)</span>
+<span class="text-xs text-green-700 font-semibold bg-green-100 px-2 py-0.5 rounded-full">Cupos</span>
+</li>
+</ul>
+</div>
+<!-- Mini Calendario de Octubre -->
+<div class="w-full md:w-56 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between text-xs font-bold text-andino-charcoal mb-2">
+<span class="uppercase tracking-wider font-title text-andino-wine">OCTUBRE 2024</span>
+<span class="text-neutral-400 text-[10px]">Bolivia</span>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center text-[10px] text-neutral-500 font-semibold mb-1">
+<span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center text-xs">
+<span class="text-neutral-300 py-1">30</span>
+<span class="py-1">1</span><span class="py-1">2</span><span class="py-1">3</span><span class="py-1">4</span><span class="py-1">5</span><span class="py-1">6</span>
+<span class="py-1">7</span><span class="py-1">8</span><span class="py-1">9</span><span class="py-1">10</span><span class="py-1">11</span><span class="py-1">12</span><span class="py-1">13</span>
+<span class="py-1">14</span><span class="py-1">15</span><span class="py-1">16</span><span class="py-1">17</span>
+<span class="cal-day active py-1 cursor-pointer" title="Camino de la Muerte">18</span>
+<span class="py-1">19</span><span class="py-1">20</span>
+<span class="py-1">21</span><span class="py-1">22</span><span class="py-1">23</span><span class="py-1">24</span>
+<span class="cal-day active py-1 cursor-pointer" title="Pico Tunari">25</span>
+<span class="py-1">26</span><span class="py-1">27</span>
+<span class="py-1">28</span><span class="py-1">29</span><span class="py-1">30</span><span class="py-1">31</span>
+</div>
+<div class="mt-2 text-[10px] text-neutral-500 flex items-center justify-center gap-1.5 pt-1 border-t border-stone-100">
+<span class="w-2 h-2 rounded-full bg-andino-wine"></span> Fechas de salida confirmadas
+              </div>
+</div>
+</div>
+</div>
+</div>
+<!-- LÍNEA CONECTORA TIPO MAPA (SVG SVG Sinuoso Decorativo Andino) -->
+<div class="relative">
+<div class="hidden lg:block absolute inset-0 pointer-events-none z-0">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 1150 900">
+<path d="M 180 180 C 280 80, 480 80, 580 180 C 680 280, 880 120, 970 180 C 1030 220, 1050 380, 950 480 C 850 580, 750 480, 680 560 C 600 650, 480 620, 380 640" opacity="0.6" stroke="#98262C" stroke-dasharray="7 7" stroke-width="2.5"></path>
+</svg>
+</div>
+<!-- FILA 1: 3 EXPERIENCIAS PRINCIPALES -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10 mb-14">
+<!-- TARJETA 1: EL CAMINO DE LA MUERTE -->
+<article class="route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group" id="route-death-road">
+<div>
+<!-- Imagen circular de experiencia -->
+<div class="relative w-44 h-44 mx-auto mb-6">
+<img alt="Ciclista descendiendo por el Camino de la Muerte en los Yungas" class="w-full h-full rounded-full object-cover route-circle-photo group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMzi5AF4cZw6f2Gn1XthgVGZ5IlUK7WeS0AkxzdPpkO5SSGdTg7a7XXagwB8hJZRNE00ni7CvKQB6faA9G4S8DqUQrp2FnLCz53A7mw5oPsA6oL71eJmLBhAVH27SGoeSOsuszCxrQBwjCbctyhhEVVCBoNwd48z_zA0R5s30u9wReDBDgjiy06JhZXR0qQZhyqhq-4A1vxaShXa70K2rqFb3Gs-mUiQ2C85sd1I8ADFrBRRBcxOO-"/>
+<!-- Pin / Ícono Flotante -->
+<div class="absolute -bottom-2 -left-2 bg-andino-wine text-white p-3 rounded-full shadow-lg border-2 border-white">
+<!-- Ícono de Ciclismo -->
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+<circle cx="5" cy="18" fill="none" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="19" cy="18" fill="none" r="3" stroke="currentColor" stroke-width="2"></circle>
+<path d="M12 18V9l-3 4-2-2 4-5h4l2 4h4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<!-- Marcador de Mapa Superior -->
+<div class="absolute -top-3 -right-2 text-andino-wine animate-bounce">
+<svg class="w-7 h-7 filter drop-shadow" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+</div>
+</div>
+<!-- Títulos y Ubicación -->
+<div class="text-center mb-4">
+<h3 class="font-title text-2xl font-bold uppercase text-andino-charcoal group-hover:text-andino-wine transition-colors">
+                  EL CAMINO DE LA MUERTE
+                </h3>
+<p class="text-xs uppercase tracking-wider text-neutral-500 font-semibold flex items-center justify-center gap-1 mt-1">
+<svg class="w-3.5 h-3.5 text-andino-wine" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" fill-rule="evenodd"></path></svg>
+                  La Paz, Bolivia
+                </p>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed text-center mb-6">
+                Descenso legendario en bicicleta desde 4.700 m hasta 1.200 m s. n. m. por caminos de tierra al borde del abismo, entre montañas, nubes y selva de los Yungas.
+              </p>
+<!-- Detalles Técnicos -->
+<div class="grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3">
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span><strong>1 día</strong> completo</span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>4.700 - 1.200 m</span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Dificultad: <strong>Alta</strong></span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Salida: <strong>06:00 a.m.</strong></span>
+</div>
+</div>
+</div>
+<!-- Precios y Botón Reservar -->
+<div class="flex items-center justify-between pt-2">
+<div>
+<span class="font-title text-2xl font-bold text-andino-wine block leading-none">Bs. 450</span>
+<span class="text-[10px] text-neutral-500 uppercase tracking-wider">Por persona</span>
+</div>
+<button class="px-5 py-2.5 rounded-full bg-andino-wine hover:bg-andino-wineDark text-white font-title text-xs tracking-wider uppercase flex items-center gap-1.5 shadow transition-transform transform active:scale-95" onclick="openBookingModal('El Camino de la Muerte', '450')">
+<span>RESERVAR</span>
+<span>→</span>
+</button>
+</div>
+</article>
+<!-- TARJETA 2: EL CAMINO DEL CHORO -->
+<article class="route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group" id="route-el-choro">
+<div>
+<!-- Imagen circular de experiencia -->
+<div class="relative w-44 h-44 mx-auto mb-6">
+<img alt="Senderistas en la Cordillera Real rumbo a El Choro" class="w-full h-full rounded-full object-cover route-circle-photo group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsk3Th13OvVk71nrug6OJlbGJS510HGm4pytk0QYqMnWV1w4nWPS8AYBrg-YBFIICmVx4c67e84C8C5KwQfFZMDxdgdkWFbeLMwQDLbdeKjIc9tsHOzboNowLkpu1HhANduie23GDx-II9SDNaAUyXuP2cDrcpPJO1rDmH2MNc1lsOCZ0IQoa8ToNieFB7phwtmu8yhoSYnLxe-Jr-AWk53-Fsds-rDQT99EvA3cnFmFfYphu5wV6V"/>
+<!-- Ícono Trekking Flotante -->
+<div class="absolute -bottom-2 -left-2 bg-andino-wine text-white p-3 rounded-full shadow-lg border-2 border-white">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<!-- Marcador de Mapa Superior -->
+<div class="absolute -top-3 -right-2 text-andino-wine animate-bounce">
+<svg class="w-7 h-7 filter drop-shadow" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+</div>
+</div>
+<!-- Títulos y Ubicación -->
+<div class="text-center mb-4">
+<h3 class="font-title text-2xl font-bold uppercase text-andino-charcoal group-hover:text-andino-wine transition-colors">
+                  EL CAMINO DEL CHORO
+                </h3>
+<p class="text-xs uppercase tracking-wider text-neutral-500 font-semibold flex items-center justify-center gap-1 mt-1">
+<svg class="w-3.5 h-3.5 text-andino-wine" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" fill-rule="evenodd"></path></svg>
+                  Cordillera Real, Bolivia
+                </p>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed text-center mb-6">
+                Sendero precolombino de 3 a 4 días que cruza la Cordillera Real. Empedrados milenarios, puentes colgantes, bosques nublados y paisajes únicos.
+              </p>
+<!-- Detalles Técnicos -->
+<div class="grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3">
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span><strong>3 - 4 días</strong></span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>4.800 - 1.200 m</span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Dificultad: <strong>Moderada</strong></span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Salida: <strong>06:00 a.m.</strong></span>
+</div>
+</div>
+</div>
+<!-- Precios y Botón Reservar -->
+<div class="flex items-center justify-between pt-2">
+<div>
+<span class="font-title text-2xl font-bold text-andino-wine block leading-none">Bs. 850</span>
+<span class="text-[10px] text-neutral-500 uppercase tracking-wider">Por persona</span>
+</div>
+<button class="px-5 py-2.5 rounded-full bg-andino-wine hover:bg-andino-wineDark text-white font-title text-xs tracking-wider uppercase flex items-center gap-1.5 shadow transition-transform transform active:scale-95" onclick="openBookingModal('El Camino del Choro', '850')">
+<span>RESERVAR</span>
+<span>→</span>
+</button>
+</div>
+</article>
+<!-- TARJETA 3: ISLA DEL SOL -->
+<article class="route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group" id="route-isla-del-sol">
+<div>
+<!-- Imagen circular de experiencia -->
+<div class="relative w-44 h-44 mx-auto mb-6">
+<img alt="Vista panorámica de la Isla del Sol en el Lago Titicaca" class="w-full h-full rounded-full object-cover route-circle-photo group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjBTbzjtRvPXpIwbvHD-9-7mGOzD7-J9AmUkV1qyliCvL0hsL_h4RPxowF6J-I_dI2gET2yUqlsde2szPR6ioJW-mSpfxg5LVd0DAPqk_mRkU0PVNSC7QsuxQl3lNVJSPMvd99IFxaB68XI4p935D-XSzNMYXdWCe1ByMd9-DEcKz73DLabcurO6qZTW0FbC9tqkLY2VnCMWeHKV2KkCMhY50lJGUHO9lreBHPm6rVE_IQcFKhiFHr"/>
+<!-- Ícono Cultural Flotante -->
+<div class="absolute -bottom-2 -left-2 bg-andino-wine text-white p-3 rounded-full shadow-lg border-2 border-white">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 14.93V18h-2v-1.07A6.002 6.002 0 016.07 13H5v-2h1.07A6.002 6.002 0 0111 6.07V5h2v1.07A6.002 6.002 0 0117.93 11H19v2h-1.07A6.002 6.002 0 0113 16.93z"></path></svg>
+</div>
+<!-- Marcador de Mapa Superior -->
+<div class="absolute -top-3 -right-2 text-andino-wine animate-bounce">
+<svg class="w-7 h-7 filter drop-shadow" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+</div>
+</div>
+<!-- Títulos y Ubicación -->
+<div class="text-center mb-4">
+<h3 class="font-title text-2xl font-bold uppercase text-andino-charcoal group-hover:text-andino-wine transition-colors">
+                  ISLA DEL SOL
+                </h3>
+<p class="text-xs uppercase tracking-wider text-neutral-500 font-semibold flex items-center justify-center gap-1 mt-1">
+<svg class="w-3.5 h-3.5 text-andino-wine" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" fill-rule="evenodd"></path></svg>
+                  Lago Titicaca, Bolivia
+                </p>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed text-center mb-6">
+                Sendero cultural andino que recorre la isla de norte a sur. Terrazas prehispánicas, ruinas incas y vistas únicas de las aguas azul zafiro del Titicaca.
+              </p>
+<!-- Detalles Técnicos -->
+<div class="grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3">
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span><strong>1 - 2 días</strong></span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>3.812 m s. n. m.</span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Dificultad: <strong>Moderada</strong></span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Salida: <strong>07:00 a.m.</strong></span>
+</div>
+</div>
+</div>
+<!-- Precios y Botón Reservar -->
+<div class="flex items-center justify-between pt-2">
+<div>
+<span class="font-title text-2xl font-bold text-andino-wine block leading-none">Bs. 600</span>
+<span class="text-[10px] text-neutral-500 uppercase tracking-wider">Por persona</span>
+</div>
+<button class="px-5 py-2.5 rounded-full bg-andino-wine hover:bg-andino-wineDark text-white font-title text-xs tracking-wider uppercase flex items-center gap-1.5 shadow transition-transform transform active:scale-95" onclick="openBookingModal('Isla del Sol', '600')">
+<span>RESERVAR</span>
+<span>→</span>
+</button>
+</div>
+</article>
+</div>
+<!-- FILA 2: 2 EXPERIENCIAS CENTRADAS (PICO TUNARI Y 20 LAGUNAS) -->
+<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+<!-- TARJETA 4: PICO TUNARI -->
+<article class="route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group" id="route-pico-tunari">
+<div>
+<div class="relative w-44 h-44 mx-auto mb-6">
+<img alt="Majestuosa cumbre nevada del Pico Tunari en Cochabamba" class="w-full h-full rounded-full object-cover route-circle-photo group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyNZDNHHFYCcVnCHm4AOaA9KLIjns4b2rxjLvp5_vNHC8mzlec8sLnvT3Boo_ewfXMFtxnG_nEeFejDGCcHzMxgeeSWl1i8hqYBws-ewkcAM7Y9Da3_dEs5mUmYEAEa-9YTruI9mRajEOtQYm7FAj_qLQd1lQdKdnAIdvBj9YxOunUdR-IJwdlH1ikAJuYH9d5630FwSCk_TkYgNyFnzq5B3sGg1Zk2YlsrE3K1gVa7qOX_eVaoozb"/>
+<!-- Ícono Cumbre Nevada -->
+<div class="absolute -bottom-2 -left-2 bg-andino-wine text-white p-3 rounded-full shadow-lg border-2 border-white">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 20h18L12 4 3 20zm9-12l4 7H8l4-7z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<!-- Marcador de Mapa Superior -->
+<div class="absolute -top-3 -right-2 text-andino-wine animate-bounce">
+<svg class="w-7 h-7 filter drop-shadow" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+</div>
+</div>
+<div class="text-center mb-4">
+<h3 class="font-title text-2xl font-bold uppercase text-andino-charcoal group-hover:text-andino-wine transition-colors">
+                  PICO TUNARI
+                </h3>
+<p class="text-xs uppercase tracking-wider text-neutral-500 font-semibold flex items-center justify-center gap-1 mt-1">
+<svg class="w-3.5 h-3.5 text-andino-wine" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" fill-rule="evenodd"></path></svg>
+                  Cochabamba, Bolivia
+                </p>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed text-center mb-6">
+                Trekking de altura para conquistar la cumbre más emblemática de Cochabamba (5.035 m). Pasajes andinos, lagunas y una vista panorámica de 360°.
+              </p>
+<div class="grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3">
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span><strong>1 - 2 días</strong></span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>5.035 m s. n. m.</span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Dificultad: <strong>Alta</strong></span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Salida: <strong>06:00 a.m.</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div>
+<span class="font-title text-2xl font-bold text-andino-wine block leading-none">Bs. 700</span>
+<span class="text-[10px] text-neutral-500 uppercase tracking-wider">Por persona</span>
+</div>
+<button class="px-5 py-2.5 rounded-full bg-andino-wine hover:bg-andino-wineDark text-white font-title text-xs tracking-wider uppercase flex items-center gap-1.5 shadow transition-transform transform active:scale-95" onclick="openBookingModal('Pico Tunari', '700')">
+<span>RESERVAR</span>
+<span>→</span>
+</button>
+</div>
+</article>
+<!-- TARJETA 5: 20 LAGUNAS DE VACAS -->
+<article class="route-card-bg border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group" id="route-vacas">
+<div>
+<div class="relative w-44 h-44 mx-auto mb-6">
+<img alt="Espejos de agua en las 20 Lagunas de Vacas Cochabamba" class="w-full h-full rounded-full object-cover route-circle-photo group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6QjR5gyAQgy6QBb04xTpK7SC6HYIgvFzoxDXRsE7NZcuEqQrITFQnFbUS1dDssPwFOG5QGkNSDfjBjkicbOF4mp5votO8Tg7lkf7rD2QpBkkTmjnzQlytou_gVdZaPezFvH-0swdwEOjg38jkn8T3jU_PoLpRGCkw-tV1pEu2BzKOYI0Q5XxgTi7s8eX0imJvlRHcutmY1B1HB7rkUuJ8Q8wU91bJqKkpfl4KP9URrqhFE4buVAun"/>
+<!-- Ícono Lagunas -->
+<div class="absolute -bottom-2 -left-2 bg-andino-wine text-white p-3 rounded-full shadow-lg border-2 border-white">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 15a4 4 0 004 4h10a4 4 0 004-4M3 15a4 4 0 014-4 4 4 0 015 2 4 4 0 015-2 4 4 0 014 4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<!-- Marcador de Mapa Superior -->
+<div class="absolute -top-3 -right-2 text-andino-wine animate-bounce">
+<svg class="w-7 h-7 filter drop-shadow" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+</div>
+</div>
+<div class="text-center mb-4">
+<h3 class="font-title text-2xl font-bold uppercase text-andino-charcoal group-hover:text-andino-wine transition-colors">
+                  20 LAGUNAS DE VACAS
+                </h3>
+<p class="text-xs uppercase tracking-wider text-neutral-500 font-semibold flex items-center justify-center gap-1 mt-1">
+<svg class="w-3.5 h-3.5 text-andino-wine" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" fill-rule="evenodd"></path></svg>
+                  Cochabamba, Bolivia
+                </p>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed text-center mb-6">
+                Ruta de alta montaña con lagunas cristalinas, paisajes andinos y conexión con la naturaleza. Una experiencia única bajo el sol del altiplano.
+              </p>
+<div class="grid grid-cols-2 gap-2 text-xs border-y border-stone-200/80 py-3 mb-6 bg-stone-50/50 rounded-xl px-3">
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span><strong>1 - 2 días</strong></span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>4.000 - 4.600 m</span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Dificultad: <strong>Moderada</strong></span>
+</div>
+<div class="flex items-center gap-2 text-neutral-700">
+<svg class="w-4 h-4 text-andino-wine shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Salida: <strong>06:00 a.m.</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div>
+<span class="font-title text-2xl font-bold text-andino-wine block leading-none">Bs. 650</span>
+<span class="text-[10px] text-neutral-500 uppercase tracking-wider">Por persona</span>
+</div>
+<button class="px-5 py-2.5 rounded-full bg-andino-wine hover:bg-andino-wineDark text-white font-title text-xs tracking-wider uppercase flex items-center gap-1.5 shadow transition-transform transform active:scale-95" onclick="openBookingModal('20 Lagunas de Vacas', '650')">
+<span>RESERVAR</span>
+<span>→</span>
+</button>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: CatalogSection -->
+<!-- BEGIN: ReadyCallToActionSection -->
+<section class="relative bg-stone-900 text-white overflow-hidden my-12" data-purpose="are-you-ready-cta">
+<!-- Imagen de fondo de senderista contemplando cordillera -->
+<div class="absolute inset-0 z-0">
+<img alt="Excursionista con mochila contemplando la inmensidad de los Andes" class="w-full h-full object-cover object-center filter brightness-90 contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ238SvdZ2ipL8lCI0jQNsYBl4190f2a2vlcZimVO4hrcqDR2a3pK44KkB8gwCb0z28WkuOmfwgQROcauhKLjVcLa0eXEovSwPkJZN9u2W8HLIeDAaJO-ZADkn4O2zBoA70m-4NSoAmsEEJ852cvHUfDH7T2kz9mO0cg5atv0klFDbOfqeJTb4Tze3k6CQlSerVian7VVD2zZTX1kZ5U7gG2ndrt9hNa3MMfqjHh9MtagmC5BlPsS2"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+<div class="absolute inset-0 bg-andino-wine/20 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-xl text-center md:text-left">
+<div class="inline-flex items-center gap-2 text-amber-300 uppercase tracking-widest text-xs font-bold mb-3">
+<span class="w-6 h-0.5 bg-amber-300"></span>
+            Acepta el desafío
+          </div>
+<div class="flex items-center justify-center md:justify-start gap-4 mb-4">
+<h2 class="font-title text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-white uppercase drop-shadow-md">
+              ¿ESTÁS LISTO?
+            </h2>
+<!-- Sol andino espiral decorativo -->
+<svg class="w-16 h-16 sm:w-20 sm:h-20 text-amber-400 shrink-0 animate-spin" fill="none" stroke="currentColor" stroke-width="4" style="animation-duration: 25s;" viewbox="0 0 100 100">
+<path d="M50 10 A40 40 0 0 1 90 50 A40 40 0 0 1 50 90 A40 40 0 0 1 10 50 A40 40 0 0 1 50 10 Z" stroke-dasharray="8 6"></path>
+<path d="M50 25 A25 25 0 0 1 75 50 A25 25 0 0 1 50 75 A25 25 0 0 1 25 50 A25 25 0 0 1 50 25 Z"></path>
+<circle cx="50" cy="50" fill="currentColor" r="10"></circle>
+</svg>
+</div>
+<p class="text-neutral-200 text-sm sm:text-base leading-relaxed drop-shadow">
+            La cordillera te espera. Prepárate con guías locales expertos, equipo de primera categoría y rutas diseñadas con pasión por la aventura boliviana.
+          </p>
+</div>
+<div class="shrink-0">
+<button class="bg-amber-400 hover:bg-amber-500 text-andino-charcoal px-8 py-4 rounded-full font-title text-lg tracking-wider uppercase shadow-2xl transition transform hover:scale-105 active:scale-95 flex items-center gap-3" onclick="openBookingModal('General')">
+<span>UNIRME AHORA</span>
+<span class="text-xl">➔</span>
+</button>
+</div>
+</div>
+</section>
+<!-- END: ReadyCallToActionSection -->
+<!-- BEGIN: GearPreparationSection -->
+<section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" data-purpose="gear-preparation" id="equipamiento">
+<div class="bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 sm:p-10 lg:p-12 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Columna Izquierda: Encabezado y Explicación -->
+<div class="lg:col-span-4 space-y-4">
+<span class="text-xs uppercase tracking-widest text-andino-wine font-bold block">Antes de partir</span>
+<h2 class="font-title text-4xl sm:text-5xl font-bold tracking-tight text-andino-wine uppercase leading-none">
+              PREPARACIÓN
+            </h2>
+<h3 class="font-title text-xl text-neutral-800 uppercase tracking-wide">
+              EQUIPAMIENTO ESENCIAL
+            </h3>
+<p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+              La cordillera andina presenta microclimas extremos con cambios repentinos de temperatura y altitud. Contar con el equipo adecuado garantiza tu disfrute y total seguridad.
+            </p>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 text-xs font-bold text-andino-wine hover:text-andino-wineDark uppercase tracking-wider border-b border-andino-wine pb-0.5" href="#contacto">
+<span>Descargar lista completa en PDF</span>
+<span>→</span>
+</a>
+</div>
+</div>
+<!-- Columna Central: Mochila de Trekking -->
+<div class="lg:col-span-4 flex justify-center py-4">
+<div class="relative w-64 h-80 sm:w-72 sm:h-96">
+<img alt="Mochila técnica roja de alta montaña para expedición andina" class="w-full h-full object-contain filter drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF8Qx0QOmeS0FlylZBre6YQats6jLfjMCEoYJC0z10BKE7BgX7Q3AR0aPugS-qRc-zCpYyavVHzebNxSFUewaMeDNTFxvUoDbIv0ECthV7IOLm7rd4ta5OlUDaUnyJX9GuVdE2XhrlDjMCMMydntdOGXTObbH8GdNkMvZ8nEw6J659TGzgstQ8SJlABS7Cr0I-hlcIdHaqoWmnNyO0wF-_GFnjtOGL5fT89gw1jdPHkxGV_wQMtdJU"/>
+<div class="absolute -bottom-2 inset-x-8 h-4 bg-black/20 rounded-full blur-md"></div>
+</div>
+</div>
+<!-- Columna Derecha: Lista de 5 Elementos Esenciales con Conectores -->
+<div class="lg:col-span-4 space-y-4">
+<!-- 1. Ropa técnica -->
+<div class="flex items-center gap-4 p-3 rounded-2xl bg-amber-50/50 border border-amber-200/60 hover:bg-amber-50 transition">
+<div class="p-2.5 rounded-xl bg-andino-wine text-white shrink-0 shadow-sm">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<div class="flex-1">
+<h4 class="font-title text-sm font-bold uppercase text-andino-charcoal">Ropa técnica</h4>
+<p class="text-[11px] text-neutral-600">Sistema 3 capas adecuado al clima de alta montaña.</p>
+</div>
+</div>
+<!-- 2. Calzado de trekking -->
+<div class="flex items-center gap-4 p-3 rounded-2xl bg-amber-50/50 border border-amber-200/60 hover:bg-amber-50 transition">
+<div class="p-2.5 rounded-xl bg-andino-wine text-white shrink-0 shadow-sm">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<div class="flex-1">
+<h4 class="font-title text-sm font-bold uppercase text-andino-charcoal">Calzado de trekking</h4>
+<p class="text-[11px] text-neutral-600">Botas con agarre, caña media y soporte impermeable.</p>
+</div>
+</div>
+<!-- 3. Hidratación -->
+<div class="flex items-center gap-4 p-3 rounded-2xl bg-amber-50/50 border border-amber-200/60 hover:bg-amber-50 transition">
+<div class="p-2.5 rounded-xl bg-andino-wine text-white shrink-0 shadow-sm">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<div class="flex-1">
+<h4 class="font-title text-sm font-bold uppercase text-andino-charcoal">Hidratación</h4>
+<p class="text-[11px] text-neutral-600">Mínimo 2 litros de agua y electrolitos rehidratantes.</p>
+</div>
+</div>
+<!-- 4. Protección solar -->
+<div class="flex items-center gap-4 p-3 rounded-2xl bg-amber-50/50 border border-amber-200/60 hover:bg-amber-50 transition">
+<div class="p-2.5 rounded-xl bg-andino-wine text-white shrink-0 shadow-sm">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<div class="flex-1">
+<h4 class="font-title text-sm font-bold uppercase text-andino-charcoal">Protección solar</h4>
+<p class="text-[11px] text-neutral-600">Bloqueador UV 50+, lentes de sol categoría 3 o 4 y gorra.</p>
+</div>
+</div>
+<!-- 5. Equipo de seguridad -->
+<div class="flex items-center gap-4 p-3 rounded-2xl bg-amber-50/50 border border-amber-200/60 hover:bg-amber-50 transition">
+<div class="p-2.5 rounded-xl bg-andino-wine text-white shrink-0 shadow-sm">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<div class="flex-1">
+<h4 class="font-title text-sm font-bold uppercase text-andino-charcoal">Equipo de seguridad</h4>
+<p class="text-[11px] text-neutral-600">Botiquín personal, linterna frontal y silbato de montaña.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: GearPreparationSection -->
+<!-- BEGIN: MapSection -->
+<section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" data-purpose="routes-map" id="mapa">
+<div class="flex items-center gap-3 mb-8">
+<div class="p-3 bg-andino-wine text-white rounded-2xl shadow-md">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<div>
+<h2 class="font-title text-4xl sm:text-5xl font-bold tracking-tight text-andino-wine uppercase leading-none">MAPA</h2>
+<p class="text-xs text-neutral-600 tracking-wide uppercase font-semibold mt-1">Ubicación geoespacial de nuestras expediciones</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Leyenda a la izquierda -->
+<div class="lg:col-span-4 bg-[#FFFDF9] border border-[#E8DEC8] rounded-3xl p-6 flex flex-col justify-between shadow-sm">
+<div>
+<h3 class="font-title text-xl font-bold uppercase text-andino-charcoal mb-4 border-b border-stone-200 pb-2">
+              Leyenda de Puntos
+            </h3>
+<ul class="space-y-4 text-xs">
+<li class="flex items-center gap-3">
+<span class="w-4 h-4 rounded-full bg-red-600 shrink-0 shadow-sm border-2 border-white ring-1 ring-red-600/40"></span>
+<div>
+<span class="font-bold text-neutral-800 block">Ruta de trekking</span>
+<span class="text-neutral-500 text-[11px]">Caminatas de altura y senderos incas</span>
+</div>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-4 h-4 rounded-full bg-blue-600 shrink-0 shadow-sm border-2 border-white ring-1 ring-blue-600/40"></span>
+<div>
+<span class="font-bold text-neutral-800 block">Ruta de ciclismo</span>
+<span class="text-neutral-500 text-[11px]">Descensos técnicos de alta adrenalina</span>
+</div>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-4 h-4 rounded-full bg-amber-500 shrink-0 shadow-sm border-2 border-white ring-1 ring-amber-500/40"></span>
+<div>
+<span class="font-bold text-neutral-800 block">Destinos turísticos</span>
+<span class="text-neutral-500 text-[11px]">Patrimonio cultural, lagos e islas</span>
+</div>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-4 h-4 rounded-full bg-stone-900 shrink-0 shadow-sm border-2 border-white ring-1 ring-stone-900/40"></span>
+<div>
+<span class="font-bold text-neutral-800 block">Nuestra sede central</span>
+<span class="text-neutral-500 text-[11px]">Cochabamba, Bolivia</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-4 border-t border-stone-200/80">
+<div class="bg-amber-50 rounded-2xl p-4 text-xs text-neutral-700 space-y-1">
+<p class="font-semibold text-andino-wine">¿Requieres transporte privado?</p>
+<p class="text-[11px] text-neutral-600">Coordinamos traslados desde aeropuertos de La Paz (LPB) y Cochabamba (CBB).</p>
+</div>
+</div>
+</div>
+<!-- Mapa visual interactivo de Bolivia -->
+<div class="lg:col-span-8 bg-[#E9E4D4] rounded-3xl border border-[#D5C9B3] overflow-hidden relative min-h-[380px] shadow-inner flex flex-col justify-between p-4" data-purpose="interactive-map-canvas">
+<!-- Controles simulados de mapa -->
+<div class="flex items-center justify-between z-10">
+<span class="text-xs bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full font-semibold shadow-sm text-neutral-700 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-green-500"></span> Mapa Topográfico Andino
+            </span>
+<div class="flex flex-col gap-1 bg-white rounded-xl shadow-md border border-stone-200 p-1">
+<button class="w-7 h-7 flex items-center justify-center font-bold text-neutral-700 hover:bg-stone-100 rounded">+</button>
+<button class="w-7 h-7 flex items-center justify-center font-bold text-neutral-700 hover:bg-stone-100 rounded">-</button>
+</div>
+</div>
+<!-- Puntos interactivos sobre el mapa -->
+<div class="relative w-full h-72 sm:h-80 my-2">
+<!-- Fondo estilizado de mapa topográfico con relieve -->
+<svg class="w-full h-full opacity-35" preserveaspectratio="none" viewbox="0 0 800 400">
+<path d="M0 100 Q 200 40, 400 90 T 800 60 L 800 400 L 0 400 Z" fill="#D7CDBC"></path>
+<path d="M0 220 Q 300 160, 500 240 T 800 180 L 800 400 L 0 400 Z" fill="#C9BDA6"></path>
+<!-- Líneas de contorno -->
+<path d="M50 150 C 250 100, 450 120, 750 80" fill="none" stroke="#B8AA91" stroke-width="2"></path>
+<path d="M30 270 C 280 210, 520 260, 780 200" fill="none" stroke="#B8AA91" stroke-width="2"></path>
+</svg>
+<!-- Punto 1: Camino de la Muerte (Azul - Ciclismo) -->
+<div class="absolute top-[28%] left-[30%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer" onclick="selectRouteHighlight('death-road')">
+<div class="flex items-center gap-1.5 bg-white/95 px-2.5 py-1 rounded-full shadow-md border border-blue-400 group-hover:scale-110 transition">
+<span class="w-3 h-3 rounded-full bg-blue-600"></span>
+<span class="text-[11px] font-bold text-neutral-800">Camino de la Muerte</span>
+</div>
+</div>
+<!-- Punto 2: Camino del Choro (Rojo - Trekking) -->
+<div class="absolute top-[38%] left-[42%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer" onclick="selectRouteHighlight('el-choro')">
+<div class="flex items-center gap-1.5 bg-white/95 px-2.5 py-1 rounded-full shadow-md border border-red-400 group-hover:scale-110 transition">
+<span class="w-3 h-3 rounded-full bg-red-600"></span>
+<span class="text-[11px] font-bold text-neutral-800">Camino del Choro</span>
+</div>
+</div>
+<!-- Punto 3: Isla del Sol (Amarillo - Cultural) -->
+<div class="absolute top-[20%] left-[20%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer" onclick="selectRouteHighlight('isla-del-sol')">
+<div class="flex items-center gap-1.5 bg-white/95 px-2.5 py-1 rounded-full shadow-md border border-amber-400 group-hover:scale-110 transition">
+<span class="w-3 h-3 rounded-full bg-amber-500"></span>
+<span class="text-[11px] font-bold text-neutral-800">Isla del Sol (Titicaca)</span>
+</div>
+</div>
+<!-- Punto 4: Pico Tunari (Rojo - Trekking) -->
+<div class="absolute top-[62%] left-[62%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer" onclick="selectRouteHighlight('pico-tunari')">
+<div class="flex items-center gap-1.5 bg-white/95 px-2.5 py-1 rounded-full shadow-md border border-red-400 group-hover:scale-110 transition">
+<span class="w-3 h-3 rounded-full bg-red-600"></span>
+<span class="text-[11px] font-bold text-neutral-800">Pico Tunari</span>
+</div>
+</div>
+<!-- Punto 5: 20 Lagunas de Vacas (Rojo - Trekking) -->
+<div class="absolute top-[72%] left-[78%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer" onclick="selectRouteHighlight('vacas')">
+<div class="flex items-center gap-1.5 bg-white/95 px-2.5 py-1 rounded-full shadow-md border border-red-400 group-hover:scale-110 transition">
+<span class="w-3 h-3 rounded-full bg-red-600"></span>
+<span class="text-[11px] font-bold text-neutral-800">20 Lagunas de Vacas</span>
+</div>
+</div>
+<!-- Sede Central: Cochabamba -->
+<div class="absolute top-[58%] left-[54%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+<div class="flex items-center gap-1.5 bg-stone-900 text-white px-2.5 py-1 rounded-full shadow-lg border border-amber-400">
+<svg class="w-3 h-3 text-amber-400" fill="currentColor" viewbox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
+<span class="text-[11px] font-bold">Cochabamba (Sede)</span>
+</div>
+</div>
+</div>
+<!-- Botón de apertura en Google Maps -->
+<div class="flex items-center justify-between text-xs text-neutral-600 bg-white/80 backdrop-blur-sm p-2 rounded-xl">
+<span class="text-[11px]">Coordenadas: 17°23'S 66°09'W • Altiplano &amp; Valles Bolivianos</span>
+<a class="font-bold text-andino-wine hover:underline" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Ver en Google Maps ↗
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: MapSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" data-purpose="about-us" id="nosotros">
+<div class="border-t border-[#E4D8C5] pt-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+<div class="space-y-2">
+<div class="w-12 h-12 rounded-2xl bg-red-100 flex items-center justify-center text-andino-wine mb-4 mx-auto md:mx-0">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<h4 class="font-title text-xl font-bold uppercase text-andino-wine">Guías Certificados</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Instructores con certificación WFR (Socorrismo en Zonas Agrestes) y amplio conocimiento botánico, geológico e histórico andino.
+            </p>
+</div>
+<div class="space-y-2">
+<div class="w-12 h-12 rounded-2xl bg-red-100 flex items-center justify-center text-andino-wine mb-4 mx-auto md:mx-0">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<h4 class="font-title text-xl font-bold uppercase text-andino-wine">Turismo Sostenible</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Trabajamos mano a mano con comunidades locales de los Yungas y del lago, fomentando economía circular y política de basura cero.
+            </p>
+</div>
+<div class="space-y-2">
+<div class="w-12 h-12 rounded-2xl bg-red-100 flex items-center justify-center text-andino-wine mb-4 mx-auto md:mx-0">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<h4 class="font-title text-xl font-bold uppercase text-andino-wine">Pasión Boliviana</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Más de 8 años trazando senderos únicos, conectando viajeros del mundo con los rincones más sobrecogedores del corazón de Sudamérica.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="relative bg-andino-wineDark text-white pt-20 pb-8 mt-16 overflow-hidden" id="contacto">
+<!-- Silueta recortada orgánica de montañas andinas en la parte superior -->
+<div class="absolute top-0 inset-x-0 overflow-hidden leading-none z-10">
+<svg class="relative block w-full h-12 sm:h-20 text-[#F8F3EA]" preserveaspectratio="none" viewbox="0 0 1200 120">
+<path d="M0 0 L 150 70 L 300 10 L 480 85 L 650 30 L 820 90 L 980 20 L 1100 60 L 1200 0 L 1200 0 L 0 0 Z" fill="currentColor"></path>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+<div class="flex flex-col items-center justify-center text-center space-y-6">
+<!-- Logotipo Footer -->
+<div class="flex flex-col items-center">
+<svg class="w-10 h-10 text-amber-300 mb-1" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2l1.6 3.6 3.9-.9-1.4 3.7 3.8 1.2-2.8 2.8 2.8 2.8-3.8 1.2 1.4 3.7-3.9-.9L12 22l-1.6-3.6-3.9.9 1.4-3.7-3.8-1.2 2.8-2.8-2.8-2.8 3.8-1.2-1.4-3.7 3.9.9L12 2zm0 6a4 4 0 100 8 4 4 0 000-8z"></path>
+</svg>
+<span class="font-title text-3xl sm:text-4xl font-bold tracking-tight uppercase text-white">RUTA ANDINA</span>
+<span class="text-xs tracking-[0.3em] uppercase text-amber-200/80 mt-1">TREKKING • CICLISMO • TURISMO</span>
+</div>
+<!-- Redes Sociales Oficiales -->
+<div class="flex items-center gap-4 pt-2">
+<!-- Instagram -->
+<a aria-label="Instagram" class="p-3 rounded-full bg-white/10 hover:bg-white/20 transition hover:scale-110" href="#">
+<svg class="w-5 h-5 fill-currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<!-- Facebook -->
+<a aria-label="Facebook" class="p-3 rounded-full bg-white/10 hover:bg-white/20 transition hover:scale-110" href="#">
+<svg class="w-5 h-5 fill-currentColor" viewbox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.6 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"></path></svg>
+</a>
+<!-- YouTube -->
+<a aria-label="YouTube" class="p-3 rounded-full bg-white/10 hover:bg-white/20 transition hover:scale-110" href="#">
+<svg class="w-5 h-5 fill-currentColor" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+<!-- WhatsApp -->
+<a aria-label="WhatsApp" class="p-3 rounded-full bg-green-600 hover:bg-green-700 transition hover:scale-110" href="https://wa.me/59170000000" target="_blank">
+<svg class="w-5 h-5 fill-currentColor" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+</a>
+</div>
+<div class="text-xs text-neutral-300 max-w-md leading-relaxed border-t border-red-900/60 pt-4">
+          Operador de Turismo Receptivo y Aventura Autorizado • Cochabamba / La Paz, Estado Plurinacional de Bolivia.
+        </div>
+</div>
+<!-- Pie de página inferior -->
+<div class="mt-8 pt-4 border-t border-red-900/40 flex flex-col sm:flex-row items-center justify-between text-[11px] text-neutral-400 gap-2">
+<span>© 2024 RUTA ANDINA. Todos los derechos reservados.</span>
+<span class="font-medium text-amber-200">Creación por YTA</span>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: BookingModal -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4 overflow-y-auto" data-purpose="reservation-modal" id="booking-modal">
+<div class="bg-[#FFFDF9] border border-[#D5C9B3] rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative transform transition-all">
+<!-- Botón de Cerrar Modal -->
+<button aria-label="Cerrar modal" class="absolute top-4 right-4 p-2 text-neutral-400 hover:text-andino-wine rounded-full transition" onclick="closeBookingModal()">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+<div class="text-center mb-6">
+<span class="text-xs font-bold text-andino-wine uppercase tracking-widest block mb-1">Reserva Directa</span>
+<h3 class="font-title text-3xl font-bold uppercase text-andino-charcoal" id="modal-route-title">
+          AGENDAR EXPEDICIÓN
+        </h3>
+<p class="text-xs text-neutral-600 mt-1">Completa tus datos para confirmar disponibilidad inmediata vía WhatsApp.</p>
+</div>
+<form class="space-y-4 text-xs" id="reservation-form" onsubmit="handleReservationSubmit(event)">
+<div>
+<label class="block font-semibold text-neutral-700 mb-1" for="modal-route-select">Ruta Seleccionada</label>
+<select class="w-full rounded-xl border-stone-300 focus:border-andino-wine focus:ring focus:ring-red-200 text-xs py-2.5" id="modal-route-select">
+<option value="El Camino de la Muerte (Bs. 450)">El Camino de la Muerte — Bs. 450</option>
+<option value="El Camino del Choro (Bs. 850)">El Camino del Choro — Bs. 850</option>
+<option value="Isla del Sol (Bs. 600)">Isla del Sol (Titicaca) — Bs. 600</option>
+<option value="Pico Tunari (Bs. 700)">Pico Tunari (Cochabamba) — Bs. 700</option>
+<option value="20 Lagunas de Vacas (Bs. 650)">20 Lagunas de Vacas — Bs. 650</option>
+</select>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-semibold text-neutral-700 mb-1" for="user-name">Tu Nombre Completo</label>
+<input class="w-full rounded-xl border-stone-300 focus:border-andino-wine focus:ring focus:ring-red-200 text-xs py-2.5" id="user-name" placeholder="Ej. Juan Pérez" required="" type="text"/>
+</div>
+<div>
+<label class="block font-semibold text-neutral-700 mb-1" for="user-participants">Nº de Personas</label>
+<input class="w-full rounded-xl border-stone-300 focus:border-andino-wine focus:ring focus:ring-red-200 text-xs py-2.5" id="user-participants" max="15" min="1" required="" type="number" value="1"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-semibold text-neutral-700 mb-1" for="user-date">Fecha Deseada</label>
+<input class="w-full rounded-xl border-stone-300 focus:border-andino-wine focus:ring focus:ring-red-200 text-xs py-2.5" id="user-date" required="" type="date"/>
+</div>
+<div>
+<label class="block font-semibold text-neutral-700 mb-1" for="user-phone">Teléfono / WhatsApp</label>
+<input class="w-full rounded-xl border-stone-300 focus:border-andino-wine focus:ring focus:ring-red-200 text-xs py-2.5" id="user-phone" placeholder="+591 70000000" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-semibold text-neutral-700 mb-1" for="user-notes">Comentarios o Restricciones Médicas / Dietéticas</label>
+<textarea class="w-full rounded-xl border-stone-300 focus:border-andino-wine focus:ring focus:ring-red-200 text-xs py-2" id="user-notes" placeholder="Experiencia previa, alergias, requerimiento de bicicleta..." rows="2"></textarea>
+</div>
+<button class="w-full bg-green-600 hover:bg-green-700 text-white font-title text-base py-3.5 rounded-full uppercase tracking-wider shadow-lg flex items-center justify-center gap-2 transition transform active:scale-95" type="submit">
+<svg class="w-5 h-5 fill-currentColor" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+<span>Confirmar por WhatsApp</span>
+</button>
+</form>
+</div>
+</div>
+<!-- END: BookingModal -->
+<!-- BEGIN: InteractiveHandlers -->
+<script data-purpose="modal-and-navigation-logic">
+    // Control del Modal de Reservas
+    function openBookingModal(routeName, price) {
+      const modal = document.getElementById('booking-modal');
+      const select = document.getElementById('modal-route-select');
+      const title = document.getElementById('modal-route-title');
+
+      if (routeName && routeName !== 'General') {
+        title.innerText = 'RESERVAR: ' + routeName.toUpperCase();
+        // Intentar seleccionar la opción correspondiente
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].text.includes(routeName)) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      } else {
+        title.innerText = 'AGENDAR EXPEDICIÓN';
+      }
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById('booking-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Cerrar modal al presionar escape o click fuera
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeBookingModal();
+    });
+
+    document.getElementById('booking-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'booking-modal') closeBookingModal();
+    });
+
+    // Envío del Formulario a WhatsApp
+    function handleReservationSubmit(event) {
+      event.preventDefault();
+      const route = document.getElementById('modal-route-select').value;
+      const name = document.getElementById('user-name').value;
+      const count = document.getElementById('user-participants').value;
+      const date = document.getElementById('user-date').value;
+      const phone = document.getElementById('user-phone').value;
+      const notes = document.getElementById('user-notes').value;
+
+      const message = `¡Hola Ruta Andina! Deseo realizar una reserva:\n\n• Ruta: ${route}\n• A nombre de: ${name}\n• Personas: ${count}\n• Fecha deseada: ${date}\n• Teléfono de contacto: ${phone}\n• Notas: ${notes || 'Ninguna'}`;
+
+      const whatsappUrl = `https://wa.me/59170000000?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+      closeBookingModal();
+    }
+
+    // Scroll suave y resalte hacia la ruta seleccionada desde el calendario o mapa
+    function selectRouteHighlight(routeId) {
+      const targetMap = {
+        'death-road': 'route-death-road',
+        'el-choro': 'route-el-choro',
+        'isla-del-sol': 'route-isla-del-sol',
+        'pico-tunari': 'route-pico-tunari',
+        'vacas': 'route-vacas'
+      };
+
+      const elementId = targetMap[routeId];
+      if (elementId) {
+        const targetElement = document.getElementById(elementId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          targetElement.classList.add('ring-4', 'ring-andino-wine');
+          setTimeout(() => {
+            targetElement.classList.remove('ring-4', 'ring-andino-wine');
+          }, 2000);
+        }
+      }
+    }
+  </script>
+<!-- END: InteractiveHandlers -->
+</body></html>

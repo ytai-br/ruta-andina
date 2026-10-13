@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ruta Andina - Reservas | Trekking • Ciclismo • Turismo</title>
+<!-- Google Fonts: Bebas Neue (Rustic / Display) & Plus Jakarta Sans (Modern Body) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            andino: {
+              red: '#B91C1C',
+              darkRed: '#8B1E22',
+              deepRed: '#5E1215',
+              cream: '#FDFBF7',
+              cardCream: '#FFFFFF',
+              sand: '#F7EFE5',
+              border: '#E8DCCF',
+              textDark: '#2B231D',
+              muted: '#7A6E65'
+            }
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'cursive', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Typography & Specific UI Styles -->
+<style data-purpose="custom-styling">
+    .font-rustic {
+      font-family: 'Bebas Neue', cursive, sans-serif;
+      letter-spacing: 0.05em;
+    }
+    .hero-brush-stroke {
+      background: radial-gradient(ellipse at center, rgba(185,28,28,0.85) 0%, rgba(185,28,28,0) 70%);
+    }
+    /* Subtle organic mountain pattern background */
+    .bg-topo-pattern {
+      background-color: #F8F3EB;
+      background-image: radial-gradient(#E5DACD 0.75px, transparent 0.75px), radial-gradient(#E5DACD 0.75px, #F8F3EB 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+    }
+    /* Custom radio styling for adventure cards */
+    .adventure-card input[type="radio"]:checked ~ .card-border-indicator {
+      border-color: #B91C1C;
+      box-shadow: 0 10px 25px -5px rgba(185, 28, 28, 0.15), 0 8px 10px -6px rgba(185, 28, 28, 0.1);
+    }
+    .adventure-card input[type="radio"]:checked ~ .card-check-badge {
+      background-color: #B91C1C;
+      border-color: #B91C1C;
+    }
+    .adventure-card input[type="radio"]:checked ~ .card-check-badge::after {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+    }
+  </style>
+</head>
+<body class="bg-topo-pattern text-andino-textDark font-sans min-h-screen antialiased flex flex-col selection:bg-andino-red selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#FDFBF7]/95 backdrop-blur-md border-b border-andino-border/70 shadow-sm transition-all">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between">
+<!-- Left Navigation Link: Nosotros -->
+<a class="inline-flex items-center gap-2 text-andino-textDark hover:text-andino-red font-bold text-sm tracking-wide transition-colors group" href="#nosotros">
+<span class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-andino-red group-hover:bg-red-200 transition-colors">
+<i class="fa-solid fa-users text-sm"></i>
+</span>
+<span class="font-rustic text-lg tracking-wider">NOSOTROS</span>
+</a>
+<!-- Center Logo: Ruta Andina -->
+<a class="flex flex-col items-center justify-center text-center group" href="#">
+<div class="flex items-center gap-1.5 text-andino-darkRed mb-0.5">
+<i class="fa-solid fa-sun text-xl animate-[spin_12s_linear_infinite]"></i>
+</div>
+<h1 class="font-rustic text-2xl sm:text-3xl text-andino-darkRed tracking-widest leading-none">RUTA ANDINA</h1>
+<span class="text-[9px] sm:text-[10px] tracking-[0.25em] font-bold text-andino-muted uppercase">Trekking • Ciclismo • Turismo</span>
+</a>
+<!-- Right Action: Reservas Button -->
+<a class="inline-flex items-center gap-2 bg-andino-red hover:bg-andino-darkRed text-white px-4 py-1.5 rounded-lg font-semibold text-xs sm:text-sm shadow-md shadow-red-900/20 hover:shadow-lg transition-all transform active:scale-95" href="#formulario-reserva">
+<i class="fa-solid fa-calendar-days"></i>
+<span>RESERVAS</span>
+<i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroBanner -->
+<section class="relative w-full h-72 sm:h-96 md:h-[420px] overflow-hidden bg-stone-900 shadow-inner">
+<!-- Mountain Trekkers Panorama Image -->
+<img alt="Excursionistas con mochilas frente a laguna y cordillera andina" class="w-full h-full object-cover object-center transform scale-105 filter brightness-[0.92] contrast-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDPR_fBmr7fAW57kbx7SdAxEvdehdjsiIDnnGK2I8QN1gpVv-D5Qw2HpLT2-Z4Ne9xGCnREGBex1uAFYL33fiBJASQqIo4tFxliwwETnDC8FK95BET54o9XhakwRmP3LsMlUmk5Xvqd8v6223O-49Fw_ZgGO-fC553F8hUTbmptgmDGihtoEInwLug_TeIYYq6WIJBY8dgocp85hg5XszmMKJrOIEjRjBPxGAzlJdo8NEs8AglxPGV"/>
+<!-- Dark Vignette / Overlay Gradients -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/60"></div>
+<!-- Overlay Big RESERVA Heading & Badge -->
+<div class="absolute bottom-6 right-6 sm:bottom-12 sm:right-16 md:right-24 text-right flex flex-col items-end">
+<!-- Calendar Icon Badge -->
+<div class="text-andino-red bg-white/90 backdrop-blur-sm p-2 rounded-xl mb-1 shadow-lg shadow-black/30 border border-white/50">
+<i class="fa-solid fa-calendar-check text-2xl sm:text-3xl"></i>
+</div>
+<!-- Big Rustic Styled Heading -->
+<h2 class="text-white font-rustic text-5xl sm:text-7xl md:text-8xl tracking-wider leading-none drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)] select-none">
+        RESERVA
+      </h2>
+<!-- Red artistic brush paint underline indicator -->
+<div class="h-2 sm:h-2.5 w-36 sm:w-56 bg-andino-red rounded-full mt-1 shadow-md shadow-red-900/40"></div>
+</div>
+</section>
+<!-- END: HeroBanner -->
+<!-- Main Content Container with max width aligned with screenshot layout -->
+<main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 w-full space-y-12">
+<!-- BEGIN: FormSection1_PlanificaTuAventura -->
+<section class="relative" id="formulario-reserva">
+<!-- Section Title & Subtitle -->
+<div class="text-left mb-4 sm:mb-6">
+<h2 class="font-rustic text-3xl sm:text-4xl text-andino-darkRed tracking-wide flex items-center gap-2">
+          PLANIFICA TU AVENTURA
+        </h2>
+<p class="text-xs sm:text-sm font-medium text-stone-600 mt-0.5">
+          Completa tus datos y envíanos tu solicitud directamente por WhatsApp.
+        </p>
+</div>
+<!-- Input Fields Box Card -->
+<div class="bg-white/90 backdrop-blur-sm border border-andino-border/80 rounded-2xl p-5 sm:p-7 shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+<!-- Field 1: Nombre completo -->
+<div>
+<label class="block text-xs font-bold text-stone-700 mb-1.5 flex items-center gap-1.5">
+<i class="fa-solid fa-user text-andino-red text-xs"></i>
+<span>Nombre completo <span class="text-andino-red">*</span></span>
+</label>
+<input class="w-full text-xs sm:text-sm bg-stone-50/70 border border-stone-300 rounded-xl px-3.5 py-2.5 text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-andino-red/30 focus:border-andino-red transition-all" id="input-nombre" placeholder="Tu nombre completo" type="text"/>
+</div>
+<!-- Field 2: País de procedencia -->
+<div>
+<label class="block text-xs font-bold text-stone-700 mb-1.5 flex items-center gap-1.5">
+<i class="fa-solid fa-earth-americas text-andino-red text-xs"></i>
+<span>País de procedencia <span class="text-andino-red">*</span></span>
+</label>
+<select class="w-full text-xs sm:text-sm bg-stone-50/70 border border-stone-300 rounded-xl px-3 py-2.5 text-stone-800 focus:outline-none focus:ring-2 focus:ring-andino-red/30 focus:border-andino-red transition-all" id="input-pais">
+<option disabled="" selected="" value="">Selecciona tu país</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Argentina">Argentina</option>
+<option value="Chile">Chile</option>
+<option value="Perú">Perú</option>
+<option value="Brasil">Brasil</option>
+<option value="Colombia">Colombia</option>
+<option value="México">México</option>
+<option value="Estados Unidos">Estados Unidos</option>
+<option value="España">España</option>
+<option value="Francia">Francia</option>
+<option value="Alemania">Alemania</option>
+<option value="Otro país">Otro país</option>
+</select>
+</div>
+<!-- Field 3: Ciudad -->
+<div>
+<label class="block text-xs font-bold text-stone-700 mb-1.5 flex items-center gap-1.5">
+<i class="fa-solid fa-location-dot text-andino-red text-xs"></i>
+<span>Ciudad <span class="text-andino-red">*</span></span>
+</label>
+<input class="w-full text-xs sm:text-sm bg-stone-50/70 border border-stone-300 rounded-xl px-3.5 py-2.5 text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-andino-red/30 focus:border-andino-red transition-all" id="input-ciudad" placeholder="Tu ciudad" type="text"/>
+</div>
+<!-- Field 4: Número de WhatsApp -->
+<div>
+<label class="block text-xs font-bold text-stone-700 mb-1.5 flex items-center gap-1.5">
+<i class="fa-brands fa-whatsapp text-andino-red text-xs"></i>
+<span>Número de WhatsApp <span class="text-andino-red">*</span></span>
+</label>
+<input class="w-full text-xs sm:text-sm bg-stone-50/70 border border-stone-300 rounded-xl px-3.5 py-2.5 text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-andino-red/30 focus:border-andino-red transition-all" id="input-whatsapp" placeholder="+591 71234567" type="tel"/>
+</div>
+<!-- Field 5: Cantidad de personas -->
+<div>
+<label class="block text-xs font-bold text-stone-700 mb-1.5 flex items-center gap-1.5">
+<i class="fa-solid fa-user-group text-andino-red text-xs"></i>
+<span>Cantidad de personas <span class="text-andino-red">*</span></span>
+</label>
+<select class="w-full text-xs sm:text-sm bg-stone-50/70 border border-stone-300 rounded-xl px-3 py-2.5 text-stone-800 focus:outline-none focus:ring-2 focus:ring-andino-red/30 focus:border-andino-red transition-all" id="input-personas">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5+">5+ personas</option>
+</select>
+</div>
+<!-- Field 6: Fecha deseada -->
+<div>
+<label class="block text-xs font-bold text-stone-700 mb-1.5 flex items-center gap-1.5">
+<i class="fa-regular fa-calendar text-andino-red text-xs"></i>
+<span>Fecha deseada <span class="text-andino-red">*</span></span>
+</label>
+<input class="w-full text-xs sm:text-sm bg-stone-50/70 border border-stone-300 rounded-xl px-3 py-2.5 text-stone-800 focus:outline-none focus:ring-2 focus:ring-andino-red/30 focus:border-andino-red transition-all" id="input-fecha" type="date"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FormSection1_PlanificaTuAventura -->
+<!-- BEGIN: ExperienceSelectorSection -->
+<section>
+<!-- Section Title & Subtitle Centered -->
+<div class="text-center mb-6 sm:mb-8">
+<h2 class="font-rustic text-3xl sm:text-4xl text-andino-darkRed tracking-wide">
+          ¿QUÉ AVENTURA QUIERES VIVIR?
+        </h2>
+<p class="text-xs sm:text-sm font-medium text-stone-600 mt-0.5">
+          Selecciona la experiencia que te interesa.
+        </p>
+</div>
+<!-- Experience Cards Grid: 3 Top + 2 Bottom Centered Layout -->
+<div class="space-y-4 sm:space-y-5">
+<!-- Top Row: 3 Experiences -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<!-- Experience 1: El Camino de la Muerte -->
+<label class="adventure-card relative cursor-pointer block select-none group">
+<input checked="" class="sr-only" name="experiencia" type="radio" value="El Camino de la Muerte"/>
+<div class="card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all duration-200 hover:border-andino-red/50 hover:shadow-md h-full">
+<!-- Radio dot circle marker in top-left -->
+<div class="card-check-badge absolute top-3 left-3 w-5 h-5 rounded-full border-2 border-stone-300 flex items-center justify-center transition-all"></div>
+<!-- Circular Thumbnail with border -->
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-stone-100 shadow-md mb-3 transition-transform group-hover:scale-105 duration-300">
+<img alt="Ciclista en El Camino de la Muerte" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHf3b3c9jQSwb9Qtt4c3TaQxwz0RGWQkSJi9jnlkodxmmZ7kyx_jUVCKCTZW7_-S-V_xfAMKByHfhzOash_3hOU3V0BR9dQFL4LRY4mjMlTJPnlNYV8O21nSu3mMYHkKhvGDpALmveSi6hnl0o7u6A7wkGPxwbgVwYQfmTtB5oXnAPexjrYchXbUi7MCYTKLa0eIaPY6Bq_DnKpClhU2eQmqzuoUCkDsZyl21L0NhmwvdJcAHsPA9E"/>
+</div>
+<!-- Title & Category -->
+<h3 class="font-rustic text-xl text-andino-darkRed tracking-wide leading-tight">
+                EL CAMINO<br/>DE LA MUERTE
+              </h3>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-stone-600 mt-1">
+<i class="fa-solid fa-person-biking text-andino-red"></i>
+<span>Ciclismo</span>
+</div>
+</div>
+</label>
+<!-- Experience 2: El Camino del Choro -->
+<label class="adventure-card relative cursor-pointer block select-none group">
+<input class="sr-only" name="experiencia" type="radio" value="El Camino del Choro"/>
+<div class="card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all duration-200 hover:border-andino-red/50 hover:shadow-md h-full">
+<div class="card-check-badge absolute top-3 left-3 w-5 h-5 rounded-full border-2 border-stone-300 flex items-center justify-center transition-all"></div>
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-stone-100 shadow-md mb-3 transition-transform group-hover:scale-105 duration-300">
+<img alt="Trekking en El Camino del Choro" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTpw2aJyPIx2XGq0XM9LxXUlHR3a1gqfruvONhTJBYkkaS3_KJzUySY112Db5BCxkqPrA4D6Pi-J615cB6ofy0ja1mcEapGGwIjZMQY32ErESVq0R_wuzIgFR5dEHZuJd7pNCwaRT-fWq7mB6RdVxdxUAwjMiYRLnjbTomZxVDrQOm58iaTrfBTjAgY2m9YTOxc3j8DeThiWAJ9aDunF8wPWvGPwe6ru2384LzWk0LmNRbUWAFwVJz"/>
+</div>
+<h3 class="font-rustic text-xl text-andino-darkRed tracking-wide leading-tight">
+                EL CAMINO<br/>DEL CHORO
+              </h3>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-stone-600 mt-1">
+<i class="fa-solid fa-person-hiking text-andino-red"></i>
+<span>Trekking</span>
+</div>
+</div>
+</label>
+<!-- Experience 3: Isla del Sol -->
+<label class="adventure-card relative cursor-pointer block select-none group">
+<input class="sr-only" name="experiencia" type="radio" value="Isla del Sol"/>
+<div class="card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all duration-200 hover:border-andino-red/50 hover:shadow-md h-full">
+<div class="card-check-badge absolute top-3 left-3 w-5 h-5 rounded-full border-2 border-stone-300 flex items-center justify-center transition-all"></div>
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-stone-100 shadow-md mb-3 transition-transform group-hover:scale-105 duration-300">
+<img alt="Lago Titicaca e Isla del Sol" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzzWEN-xLRe7vpmcP3mVVgHax2gaMmdQAqa7MgQTpJP2mORznSsjtHU-Btt-pjCa87_Zk3KFpqIHwz8nNLhoTOf8A_f2Q7S3ISlJtOaj5BPovoPUXZ-WpHZe0PdFx_9T0t89iUCv9nsVqqbE4H2JZQ2RtzqTK1H9EQfEXRfAGpuio72y-gdjUtBN18y1l_0HOBuqRNAqnq4ex8EGsF1LIO56da-yLwfOsE6T9ZOaor-pldVuzcJx6R"/>
+</div>
+<h3 class="font-rustic text-xl text-andino-darkRed tracking-wide leading-tight">
+                ISLA DEL SOL
+              </h3>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-stone-600 mt-1">
+<i class="fa-solid fa-landmark-dome text-andino-red"></i>
+<span>Trekking cultural</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Bottom Row: 2 Experiences Centered -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+<!-- Experience 4: Pico Tunari -->
+<label class="adventure-card relative cursor-pointer block select-none group">
+<input class="sr-only" name="experiencia" type="radio" value="Pico Tunari"/>
+<div class="card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all duration-200 hover:border-andino-red/50 hover:shadow-md h-full">
+<div class="card-check-badge absolute top-3 left-3 w-5 h-5 rounded-full border-2 border-stone-300 flex items-center justify-center transition-all"></div>
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-stone-100 shadow-md mb-3 transition-transform group-hover:scale-105 duration-300">
+<img alt="Pico Tunari montaña y laguna" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtlEw0FKn8s5ie0SWoJjw04ucrNbqb4BmF0rWlEmzyrTbxQpLpgwpG73WiI15TnzQVI2s09ufQQYcQYJkVudqsgmYCrihnQBqIZ9M6jqneDUQS9R1XnvRWX_sXsYl1w-FpxCNIQvURYZS5UOFV8Wpfd9zre35RqNhXUDsr9-dI9Ar3BaLPEq9-bjvHbISpBtmPL_H47whtS52yV7oe30GdyPT8JsDoF0o1aEyPRJwGzCLLSmLolWHZ"/>
+</div>
+<h3 class="font-rustic text-xl text-andino-darkRed tracking-wide leading-tight">
+                PICO TUNARI
+              </h3>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-stone-600 mt-1">
+<i class="fa-solid fa-mountain text-andino-red"></i>
+<span>Trekking de altura</span>
+</div>
+</div>
+</label>
+<!-- Experience 5: 20 Lagunas de Vacas -->
+<label class="adventure-card relative cursor-pointer block select-none group">
+<input class="sr-only" name="experiencia" type="radio" value="20 Lagunas de Vacas"/>
+<div class="card-border-indicator bg-white/95 border-2 border-stone-200/90 rounded-2xl p-4 sm:p-5 flex flex-col items-center text-center transition-all duration-200 hover:border-andino-red/50 hover:shadow-md h-full">
+<div class="card-check-badge absolute top-3 left-3 w-5 h-5 rounded-full border-2 border-stone-300 flex items-center justify-center transition-all"></div>
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-stone-100 shadow-md mb-3 transition-transform group-hover:scale-105 duration-300">
+<img alt="20 Lagunas de Vacas" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADSnWfU9340Q9mKXlshfy8wmUc1HvKZhBYeOGA6icgCEAR_UAf-Gc-0cvVAt28Lhi1PMtcqBV4imqzeAIiXNVl-OTuNj1bHUP7Hv8C469KGZ3dE0jFdauiAUb1TRgVE360SUEExiNNSiovEfFApYgPQHcrW2tmLrdpeUMZt4r7URMH1UI8bO6gecH8b8mQEx5Mj1osbU9Eu2pWS9XknuHed0OHvoJdypnZIHfma2F57GCGamvr3aW5"/>
+</div>
+<h3 class="font-rustic text-xl text-andino-darkRed tracking-wide leading-tight">
+                20 LAGUNAS<br/>DE VACAS
+              </h3>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-stone-600 mt-1">
+<i class="fa-solid fa-water text-andino-red"></i>
+<span>Trekking</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Extra Choice: Asesoramiento personalizado -->
+<div class="max-w-xl mx-auto pt-2">
+<label class="adventure-card relative cursor-pointer flex items-center gap-3 bg-white/90 border border-stone-200 rounded-2xl p-3.5 px-4 sm:px-6 shadow-sm hover:border-andino-red/40 transition-all select-none">
+<input class="sr-only" name="experiencia" type="radio" value="Necesito asesoramiento para elegir mi ruta"/>
+<div class="card-check-badge w-5 h-5 rounded-full border-2 border-stone-300 flex-shrink-0 flex items-center justify-center transition-all"></div>
+<div class="w-7 h-7 rounded-full bg-red-100 text-andino-red flex items-center justify-center text-sm font-bold flex-shrink-0">
+              ?
+            </div>
+<div class="text-left leading-tight">
+<p class="font-bold text-xs sm:text-sm text-andino-darkRed">Necesito asesoramiento para elegir mi ruta</p>
+<p class="text-[11px] sm:text-xs text-stone-500">Quiero que el equipo de Ruta Andina me recomiende la mejor opción.</p>
+</div>
+</label>
+</div>
+</div>
+</section>
+<!-- END: ExperienceSelectorSection -->
+<!-- BEGIN: PaymentMethodsSection -->
+<section>
+<!-- Section Title & Subtitle -->
+<div class="mb-4 sm:mb-5">
+<h2 class="font-rustic text-3xl sm:text-4xl text-andino-darkRed tracking-wide flex items-center gap-2.5">
+<i class="fa-regular fa-credit-card text-2xl text-andino-red"></i>
+<span>MÉTODOS DE PAGO</span>
+</h2>
+<p class="text-xs sm:text-sm font-medium text-stone-600 mt-0.5">
+          Los pagos se coordinan directamente con Ruta Andina después de verificar la disponibilidad de la experiencia.
+        </p>
+</div>
+<!-- Payment Cards Grid (2 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+<!-- Card 1: Pago QR Bancario (Nacional) -->
+<div class="bg-white/90 backdrop-blur-sm border border-andino-border/80 rounded-2xl p-5 sm:p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start gap-4 mb-3">
+<!-- Big QR Code Icon in Red -->
+<div class="text-andino-red text-4xl sm:text-5xl flex-shrink-0 p-1">
+<i class="fa-solid fa-qrcode"></i>
+</div>
+<div>
+<h3 class="font-rustic text-xl sm:text-2xl text-andino-darkRed tracking-wider leading-none">
+                  PAGO POR QR BANCARIO
+                </h3>
+<div class="inline-flex items-center gap-1.5 text-xs font-semibold text-stone-700 mt-1">
+<span class="text-base leading-none">🇧🇴</span>
+<span>Para visitantes en Bolivia.</span>
+</div>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-stone-600 leading-relaxed mb-5">
+              Realiza tu pago mediante QR de una entidad bancaria nacional, una vez confirmada tu reserva.
+            </p>
+</div>
+<button class="payment-btn w-full bg-andino-red hover:bg-andino-darkRed text-white py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow hover:shadow-md" onclick="setPaymentMethod('QR Bancario (Bolivia)')" type="button">
+<span>Consultar pago nacional</span>
+<i class="fa-solid fa-arrow-right text-xs"></i>
+</button>
+</div>
+<!-- Card 2: Pago Internacional -->
+<div class="bg-white/90 backdrop-blur-sm border border-andino-border/80 rounded-2xl p-5 sm:p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start gap-4 mb-3">
+<!-- Card / Plus Icon in Red -->
+<div class="text-andino-red text-4xl sm:text-5xl flex-shrink-0 p-1">
+<i class="fa-solid fa-credit-card"></i>
+</div>
+<div>
+<h3 class="font-rustic text-xl sm:text-2xl text-andino-darkRed tracking-wider leading-none">
+                  PAGO INTERNACIONAL
+                </h3>
+<div class="inline-flex items-center gap-1.5 text-xs font-semibold text-stone-700 mt-1">
+<i class="fa-solid fa-globe text-blue-600 text-xs"></i>
+<span>Para visitantes del extranjero.</span>
+</div>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-stone-600 leading-relaxed mb-5">
+              Consulta las opciones de pago disponibles directamente con nuestro equipo.
+            </p>
+</div>
+<button class="payment-btn w-full bg-andino-red hover:bg-andino-darkRed text-white py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow hover:shadow-md" onclick="setPaymentMethod('Pago Internacional')" type="button">
+<span>Consultar pago internacional</span>
+<i class="fa-solid fa-arrow-right text-xs"></i>
+</button>
+</div>
+</div>
+</section>
+<!-- END: PaymentMethodsSection -->
+<!-- BEGIN: VerificationSummarySection -->
+<section>
+<!-- Section Title & Subtitle -->
+<div class="mb-4 sm:mb-5">
+<h2 class="font-rustic text-3xl sm:text-4xl text-andino-darkRed tracking-wide flex items-center gap-2.5">
+<i class="fa-solid fa-clipboard-check text-2xl text-andino-red"></i>
+<span>VERIFICA TU RESERVA</span>
+</h2>
+<p class="text-xs sm:text-sm font-medium text-stone-600 mt-0.5">
+          Revisa que toda la información sea correcta antes de enviar tu solicitud.
+        </p>
+</div>
+<!-- Verification Card -->
+<div class="bg-white/95 backdrop-blur-md border border-andino-border/90 rounded-2xl p-6 sm:p-8 shadow-sm space-y-6">
+<!-- Summary Grid 3 Columns -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 divide-y md:divide-y-0 md:divide-x divide-stone-200">
+<!-- Column 1: Datos Personales -->
+<div class="space-y-3 pt-3 md:pt-0">
+<div class="flex items-start gap-2 text-xs sm:text-sm">
+<i class="fa-solid fa-user text-andino-red w-4 mt-0.5"></i>
+<span class="font-bold text-stone-700 min-w-[70px]">Nombre:</span>
+<span class="text-stone-900 font-semibold break-words" id="summary-nombre">-</span>
+</div>
+<div class="flex items-start gap-2 text-xs sm:text-sm">
+<i class="fa-solid fa-earth-americas text-andino-red w-4 mt-0.5"></i>
+<span class="font-bold text-stone-700 min-w-[70px]">País:</span>
+<span class="text-stone-900 font-semibold break-words" id="summary-pais">-</span>
+</div>
+<div class="flex items-start gap-2 text-xs sm:text-sm">
+<i class="fa-solid fa-location-dot text-andino-red w-4 mt-0.5"></i>
+<span class="font-bold text-stone-700 min-w-[70px]">Ciudad:</span>
+<span class="text-stone-900 font-semibold break-words" id="summary-ciudad">-</span>
+</div>
+<div class="flex items-start gap-2 text-xs sm:text-sm">
+<i class="fa-brands fa-whatsapp text-andino-red w-4 mt-0.5"></i>
+<span class="font-bold text-stone-700 min-w-[70px]">WhatsApp:</span>
+<span class="text-stone-900 font-semibold break-words" id="summary-whatsapp">-</span>
+</div>
+</div>
+<!-- Column 2: Datos de la Reserva -->
+<div class="space-y-3 pt-4 md:pt-0 md:pl-6">
+<div class="flex items-start gap-2 text-xs sm:text-sm">
+<i class="fa-solid fa-person-hiking text-andino-red w-4 mt-0.5"></i>
+<span class="font-bold text-stone-700 min-w-[95px]">Experiencia:</span>
+<span class="text-stone-900 font-semibold break-words" id="summary-experiencia">El Camino de la Muerte</span>
+</div>
+<div class="flex items-start gap-2 text-xs sm:text-sm">
+<i class="fa-regular fa-calendar text-andino-red w-4 mt-0.5"></i>
+<span class="font-bold text-stone-700 min-w-[95px]">Fecha:</span>
+<span class="text-stone-900 font-semibold break-words" id="summary-fecha">-</span>
+</div>
+<div class="flex items-start gap-2 text-xs sm:text-sm">
+<i class="fa-solid fa-user-group text-andino-red w-4 mt-0.5"></i>
+<span class="font-bold text-stone-700 min-w-[95px]">Participantes:</span>
+<span class="text-stone-900 font-semibold break-words" id="summary-personas">1</span>
+</div>
+<div class="flex items-start gap-2 text-xs sm:text-sm">
+<i class="fa-solid fa-credit-card text-andino-red w-4 mt-0.5"></i>
+<span class="font-bold text-stone-700 min-w-[95px]">Método de pago:</span>
+<span class="text-stone-900 font-semibold break-words" id="summary-pago">A coordinar</span>
+</div>
+</div>
+<!-- Column 3: Observaciones -->
+<div class="pt-4 md:pt-0 md:pl-6 flex flex-col">
+<label class="flex items-center gap-2 text-xs sm:text-sm font-bold text-stone-700 mb-2" for="input-observaciones">
+<i class="fa-regular fa-comment-dots text-andino-red"></i>
+<span>Observaciones / Solicitudes especiales:</span>
+</label>
+<textarea class="w-full text-xs sm:text-sm bg-stone-50/70 border border-stone-300 rounded-xl p-2.5 text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-andino-red/30 focus:border-andino-red transition-all resize-none flex-1" id="input-observaciones" placeholder="¿Tienes alguna preferencia de horario, restricción alimentaria o consulta?" rows="3"></textarea>
+</div>
+</div>
+<!-- Agreement Checkbox -->
+<div class="pt-4 border-t border-stone-200">
+<label class="flex items-start sm:items-center justify-center gap-2.5 cursor-pointer text-xs sm:text-sm text-stone-700 select-none">
+<input class="rounded border-stone-300 text-andino-red focus:ring-andino-red mt-0.5 sm:mt-0 w-4 h-4 cursor-pointer" id="checkbox-confirmacion" type="checkbox"/>
+<span class="font-medium">
+              He revisado mis datos y entiendo que mi reserva está sujeta a confirmación de disponibilidad.
+            </span>
+</label>
+</div>
+<!-- Big Primary CTA Button: Enviar por WhatsApp -->
+<div class="flex flex-col items-center justify-center pt-2">
+<button class="w-full sm:w-auto min-w-[320px] sm:min-w-[420px] bg-andino-red hover:bg-andino-darkRed text-white py-3.5 px-8 rounded-xl font-bold text-sm sm:text-base flex items-center justify-center gap-3 shadow-lg shadow-red-900/25 hover:shadow-xl transform active:scale-98 transition-all" id="btn-enviar-whatsapp" onclick="sendReservationToWhatsApp()" type="button">
+<i class="fa-brands fa-whatsapp text-xl"></i>
+<span class="font-rustic text-lg sm:text-xl tracking-wider">ENVIAR SOLICITUD POR WHATSAPP</span>
+<i class="fa-solid fa-arrow-right text-sm"></i>
+</button>
+<span class="text-xs font-semibold text-red-600 mt-2 hidden" id="form-error-msg">
+            Por favor, completa los campos requeridos y acepta la confirmación.
+          </span>
+</div>
+</div>
+</section>
+<!-- END: VerificationSummarySection -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="mt-auto bg-andino-deepRed text-white pt-10 pb-8 border-t-4 border-andino-red relative overflow-hidden">
+<!-- Andean Mountain Silhouette graphic in background -->
+<div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+<!-- Center/Left: Official Logo Ruta Andina -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left">
+<div class="flex items-center gap-2 text-stone-200 mb-1">
+<i class="fa-solid fa-sun text-lg"></i>
+</div>
+<h2 class="font-rustic text-2xl sm:text-3xl text-white tracking-widest leading-none">
+            RUTA ANDINA
+          </h2>
+<span class="text-[9px] sm:text-[10px] tracking-[0.25em] text-stone-300 font-semibold uppercase mt-0.5">
+            TREKKING • CICLISMO • TURISMO
+          </span>
+</div>
+<!-- Right Side: Social Media Icons + Creation Credit -->
+<div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+<!-- Social Icons -->
+<div class="flex items-center gap-4 text-white text-lg">
+<a aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors" href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors" href="#">
+<i class="fa-brands fa-facebook-f text-sm"></i>
+</a>
+<a aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors" href="#">
+<i class="fa-brands fa-youtube text-sm"></i>
+</a>
+<a aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors" href="#">
+<i class="fa-brands fa-whatsapp text-base"></i>
+</a>
+</div>
+<!-- Vertical separator line on desktop -->
+<div class="hidden sm:block h-6 w-px bg-white/20"></div>
+<!-- Creator attribution -->
+<div class="text-xs text-stone-300 font-medium">
+            Creación por <span class="font-bold text-white tracking-wider">YTA</span>
+</div>
+</div>
+</div>
+<!-- Copyright bottom footnote -->
+<div class="text-center text-[11px] text-stone-400 mt-8 pt-4 border-t border-white/10">
+        © 2025 Ruta Andina. Todos los derechos reservados. Turismo de aventura en Bolivia.
+      </div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="form-sync-and-whatsapp">
+    // References to form inputs
+    const inputNombre = document.getElementById('input-nombre');
+    const inputPais = document.getElementById('input-pais');
+    const inputCiudad = document.getElementById('input-ciudad');
+    const inputWhatsapp = document.getElementById('input-whatsapp');
+    const inputPersonas = document.getElementById('input-personas');
+    const inputFecha = document.getElementById('input-fecha');
+    const inputObservaciones = document.getElementById('input-observaciones');
+    const checkboxConfirm = document.getElementById('checkbox-confirmacion');
+    const formErrorMsg = document.getElementById('form-error-msg');
+
+    // References to summary display elements
+    const summaryNombre = document.getElementById('summary-nombre');
+    const summaryPais = document.getElementById('summary-pais');
+    const summaryCiudad = document.getElementById('summary-ciudad');
+    const summaryWhatsapp = document.getElementById('summary-whatsapp');
+    const summaryExperiencia = document.getElementById('summary-experiencia');
+    const summaryFecha = document.getElementById('summary-fecha');
+    const summaryPersonas = document.getElementById('summary-personas');
+    const summaryPago = document.getElementById('summary-pago');
+
+    // Experience Radio buttons
+    const expRadios = document.querySelectorAll('input[name="experiencia"]');
+
+    // Real-time synchronization
+    inputNombre.addEventListener('input', (e) => {
+      summaryNombre.textContent = e.target.value.trim() || '-';
+    });
+
+    inputPais.addEventListener('change', (e) => {
+      summaryPais.textContent = e.target.value || '-';
+    });
+
+    inputCiudad.addEventListener('input', (e) => {
+      summaryCiudad.textContent = e.target.value.trim() || '-';
+    });
+
+    inputWhatsapp.addEventListener('input', (e) => {
+      summaryWhatsapp.textContent = e.target.value.trim() || '-';
+    });
+
+    inputPersonas.addEventListener('change', (e) => {
+      summaryPersonas.textContent = e.target.value || '1';
+    });
+
+    inputFecha.addEventListener('change', (e) => {
+      if (e.target.value) {
+        // Format to dd/mm/yyyy
+        const parts = e.target.value.split('-');
+        summaryFecha.textContent = `${parts[2]}/${parts[1]}/${parts[0]}`;
+      } else {
+        summaryFecha.textContent = '-';
+      }
+    });
+
+    expRadios.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        if (e.target.checked) {
+          summaryExperiencia.textContent = e.target.value;
+        }
+      });
+    });
+
+    // Helper for payment method selection
+    function setPaymentMethod(method) {
+      summaryPago.textContent = method;
+      
+      // Visual feedback on clicked button
+      const alertBadge = document.createElement('div');
+      alertBadge.className = 'fixed bottom-4 right-4 bg-andino-darkRed text-white px-4 py-2 rounded-lg shadow-xl text-xs font-bold z-50 transition-all';
+      alertBadge.textContent = `Método seleccionado: ${method}`;
+      document.body.appendChild(alertBadge);
+      setTimeout(() => alertBadge.remove(), 2500);
+    }
+
+    // WhatsApp Message formatting and opening
+    function sendReservationToWhatsApp() {
+      const nombre = inputNombre.value.trim();
+      const pais = inputPais.value.trim();
+      const ciudad = inputCiudad.value.trim();
+      const whatsapp = inputWhatsapp.value.trim();
+      const fecha = summaryFecha.textContent.trim();
+      const personas = inputPersonas.value;
+      const experiencia = summaryExperiencia.textContent.trim();
+      const metodoPago = summaryPago.textContent.trim();
+      const observaciones = inputObservaciones.value.trim();
+      const confirmado = checkboxConfirm.checked;
+
+      // Validation
+      if (!nombre || !pais || !ciudad || !whatsapp || fecha === '-' || !confirmado) {
+        formErrorMsg.classList.remove('hidden');
+        if (!confirmado) {
+          formErrorMsg.textContent = 'Por favor, marca la casilla de verificación antes de continuar.';
+        } else {
+          formErrorMsg.textContent = 'Por favor, completa todos los campos obligatorios (*) y la fecha deseada.';
+        }
+        formErrorMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      formErrorMsg.classList.add('hidden');
+
+      // WhatsApp target number
+      const targetPhone = '59171234567';
+
+      // Build formatted text message
+      const textMessage = 
+        `🏔️ *SOLICITUD DE RESERVA - RUTA ANDINA* 🏔️\n\n` +
+        `👤 *Nombre:* ${nombre}\n` +
+        `🌍 *País:* ${pais}\n` +
+        `📍 *Ciudad:* ${ciudad}\n` +
+        `📱 *WhatsApp:* ${whatsapp}\n\n` +
+        `🎯 *Experiencia:* ${experiencia}\n` +
+        `👥 *Participantes:* ${personas}\n` +
+        `📅 *Fecha solicitada:* ${fecha}\n` +
+        `💳 *Método de pago preferido:* ${metodoPago}\n` +
+        (observaciones ? `📝 *Observaciones:* ${observaciones}\n` : '') +
+        `\n¡Hola equipo de Ruta Andina! Deseo verificar disponibilidad para esta aventura.`;
+
+      const encodedMessage = encodeURIComponent(textMessage);
+      const waURL = `https://wa.me/${targetPhone}?text=${encodedMessage}`;
+
+      // Open WhatsApp in a new tab
+      window.open(waURL, '_blank');
+    }
+  </script>
+<!-- END: InteractiveScripts -->
+</body></html>
