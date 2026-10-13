@@ -67,6 +67,9 @@ El hosting debe redirigir rutas SPA a `index.html` para abrir `/nosotros` y `/re
 
 El workflow `.github/workflows/deploy-pages.yml` construye y publica el sitio al hacer push a `main`. Configura GitHub Pages con **GitHub Actions** como source. El build detecta automáticamente el nombre del repositorio para usar el subpath correcto; `dist/404.html` conserva las rutas de React Router al abrir `/nosotros` o `/reservas` directamente.
 
+- Repositorio: https://github.com/ytai-br/ruta-andina
+- Sitio publicado: https://ytai-br.github.io/ruta-andina/
+
 En el repositorio, agrega estas variables en **Settings → Secrets and variables → Actions → Variables** para que reservas y WhatsApp funcionen en el sitio publicado:
 
 - `VITE_SUPABASE_URL`: Project URL de RutaAndina.
